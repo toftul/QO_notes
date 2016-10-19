@@ -1,8 +1,6 @@
 \documentclass[12pt,a4paper,titlepage]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
-\usepackage[usenames]{color} %!!
-\usepackage{colortbl} %!
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -10,7 +8,7 @@
 \usepackage{indentfirst}
 \usepackage[hidelinks]{hyperref}
 \usepackage[ddmmyyyy]{datetime}
-\usepackage{epigraph}
+\usepackage{epigraph}   
 \usepackage{graphicx}
 \graphicspath{{fig/}}
 \usepackage[subnum]{cases}
@@ -48,4 +46,4 @@
 	\include{L1}
 
 	
-\end{document} 
+\end{document}
