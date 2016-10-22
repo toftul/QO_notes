@@ -147,3 +147,47 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 		\mathscr{H} = \sum_{\vec{k},s}  \left( \frac{p^2_{\vec{k}s}}{2}+ \frac{\omega^2_{\vec{k}} q_{\vec{k}s}^2}{2} \right).
 	\end{equation}
 	
+	If we can write full energy of the system like $\mathscr{H} \sim p^2/2 + \omega^2 q^2/2$, then it means this system can be quantize.  So next, we  \textit{quantize fields}. First of all we need to move to operators by doing
+	\begin{equation}
+		\begin{cases}
+		q_{\vec{k}s} \to \hat{q}_{\vec{k}s}, \\
+		p_{\vec{k}s} \to \hat{p}_{\vec{k}s}.
+		\end{cases}
+	\end{equation}
+	After that our Hamiltonian function will transform to Mr. Hamiltonian. 
+	Besides, coordinate and impulse operator must obey next commutation relations:
+	\begin{equation}
+		\left[\hat{q}_{\vec{k}s} ; \hat{p}_{\vec{k}'s'} \right] = i \hbar \delta^{(3)}_{\vec{k}\vec{k}'} \delta_{ss'},
+		\label{eq:con1}
+	\end{equation} 
+	\begin{equation}
+		\left[\hat{q}_{\vec{k}s} ; \hat{q}_{\vec{k}'s'} \right] = \left[\hat{p}_{\vec{k}s} ; \hat{p}_{\vec{k}'s'} \right] = 0.
+		\label{eq:con2}
+	\end{equation}
+	Moreover, this operators must be Hermitian because $\mathscr{H}$ stands for real energy which we can measure. Therefore
+	\begin{equation}
+		\hat{q}_{\vec{k}s} = \hat{q}^{\dagger}_{\vec{k}s}, \qquad \hat{p}_{\vec{k}s} = \hat{p}^{\dagger}_{\vec{k}s}.
+		\label{eq:con3}
+	\end{equation}
+	Relations \eqref{eq:con1}, \eqref{eq:con2} and \eqref{eq:con3} impose conditions for $\hat{q}_{\vec{k}s}$ and $\hat{p}_{\vec{k}s}$.
+	Hereafter we can introduce ladder operators:
+	\begin{eqnarray}
+		\hat{a}_{\vec{k}s}(t) &=& \dfrac{1}{\sqrt{2 \hbar \omega}} \left( \omega \hat{q}_{\vec{k}s} + i \hat{p}_{\vec{k}s} \right), \\ \nonumber \\
+		\hat{a}^{\dagger}_{\vec{k}s}(t) &=& \dfrac{1}{\sqrt{2 \hbar \omega}} \left( \omega \hat{q}_{\vec{k}s} - i \hat{p}_{\vec{k}s} \right).
+	\end{eqnarray}
+	This leads to the useful representation of $\hat{q}_{\vec{k}s}$ and $\hat{p}_{\vec{k}s}$:
+	\begin{eqnarray}
+		\hat{q}_{\vec{k}s}(t) &=& \sqrt{\dfrac{\hbar}{2 \omega}} \left( \hat{a}^{\dagger}_{\vec{k}s} +  \hat{a}_{\vec{k}s} \right), \\ \nonumber \\
+		\hat{p}_{\vec{k}s}(t) &=& i \sqrt{\dfrac{\hbar \omega}{2}} \left( \hat{a}^{\dagger}_{\vec{k}s} -  \hat{a}_{\vec{k}s} \right).
+	\end{eqnarray}
+	
+	Commutation relations can be easily derived from consideration $\left[ \hat{q}_{\vec{k}s} ; \hat{p}_{\vec{k}s} \right]$ in the repre-sentation  of ladder operators and using \eqref{eq:con1} and \eqref{eq:con2}. So we get
+	\begin{equation}
+		\left[ \hat{a}_{\vec{k},s} ; \hat{a}^{\dagger}_{\vec{k}',s'} \right] = \delta^{(3)}_{\vec{k}\vec{k}'} \delta_{ss'}.
+	\end{equation}
+	
+	Easy to show that Hamiltonian can be written as follows
+	\begin{equation}
+		\hat{\mathscr{H}} = \sum_{\vec{k},s} \hbar \omega_{\vec{k}} \left[ \hat{a}^{\dagger}_{\vec{k},s} \hat{a}_{\vec{k},s} + \frac{1}{2} \right].
+	\end{equation}
+	
