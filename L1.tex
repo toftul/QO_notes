@@ -90,8 +90,8 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	Consider a wave with wave vector $\vec{k}$. According to Maxwell equations, there are two independent polarizations, so we introduce two transverse polarization vectors $\vec{e}_{\vec{k}1}; \vec{e}_{\vec{k}2}$. Three vectors $(\vec{e}_{\vec{k}1}; \vec{e}_{\vec{k}2}; \vec{k}/k)$ form a right-handed orthonormal basis which implies:
 	\begin{equation}
 		\begin{matrix}
-			\vec{k} \cdot \vec{e}_{\vec{k}s} = 0, && \vecmult{\vec{e}_{\vec{k}1}}{\vec{e}_{\vec{k}2}} = \vec{k}/k, \\ \\
-			\vec{e}_{\vec{k}s} \cdot \vec{e}_{\vec{k}s'} = \delta_{ss'}, && \vec{c}_{\vec{k}} = \sum_s c_{\vec{k}s} \vec{e}_{\vec{k}s}.
+			\vec{k} \cdot \vec{e}_{\vec{k}s} = 0, && \vecmult{\vec{e}_{\vec{k}1}}{\vec{e}^*_{\vec{k}2}} = \vec{k}/k, \\ \\
+			\vec{e}_{\vec{k}s} \cdot \vec{e}^*_{\vec{k}s'} = \delta_{ss'}, && \vec{c}_{\vec{k}} = \sum_s c_{\vec{k}s} \vec{e}_{\vec{k}s}.
 		\end{matrix}
 	\end{equation}
 	After that we can rewrite decomposition of $\vec{A}$ as
@@ -189,5 +189,24 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	Easy to  show that Hamiltonian can be written as follows
 	\begin{equation}
 		\hat{\mathscr{H}} = \sum_{\vec{k},s} \hbar \omega_{\vec{k}} \left[ \hat{a}^{\dagger}_{\vec{k},s} \hat{a}_{\vec{k},s} + \frac{1}{2} \right].
+	\end{equation}
+	
+	It's convenient to rewrite coefficients $\hat{u}_{\vec{k}s}$ and $\hat{u}^+_{\vec{k}s}$ as
+	\begin{equation}
+		\hat{u}_{\vec{k}s} = \frac{1}{2} \left( \hat{q}_{\vec{k}s} - \frac{1}{i \omega_{\vec{k}}} \hat{p}_{\vec{k}s}  \right) = \sqrt{\frac{\hbar}{2 \omega_{\vec{k}}}} \hat{a}_{\vec{k}s},
+	\end{equation}
+	\begin{equation}
+		\hat{u}^+_{\vec{k}s} = \sqrt{\frac{\hbar}{2 \omega_{\vec{k}}}} \hat{a}^+_{\vec{k}s}.
+	\end{equation}
+	Now we can write vector potential operator by $\vec{A} \to \hat{\vec{A}}$. So
+	\begin{equation}
+		\boxed{\hat{\vec{A}} = \sum_{\vec{k},s} A_{\vec{k}} \left( \hat{a}_{\vec{k}s} \vec{e}_{\vec{k}s} e^{i \vec{k} \vec{r}} + \text{ e.c. } \right), \qquad A_{\vec{k}} = \sqrt{\frac{2 \pi \hbar}{L^3 \omega}}.}
+	\end{equation}
+	Finally we can write field operators:
+	\begin{equation}
+		\boxed{\hat{\vec{E}} = \sum_{\vec{k},s} \varepsilon_{\vec{k}} \left( i \hat{a}_{\vec{k}s} \vec{e}_{\vec{k}s} e^{i \vec{k} \vec{r}} + \text{ e.c. } \right), \qquad \varepsilon_{\vec{k}} = \sqrt{\frac{4 \pi \hbar \omega_{\vec{k}}}{L^3}},}
+	\end{equation}
+	\begin{equation}
+		\boxed{\hat{\vec{H}} = \sum_{\vec{k},s} A_{\vec{k}} \left( i \hat{a}_{\vec{k}s} \left[ \vec{k} \times \vec{e}_{\vec{k}s} \right] e^{i \vec{k} \vec{r}} + \text{ e.c. } \right).}
 	\end{equation}
 	
