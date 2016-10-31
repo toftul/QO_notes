@@ -147,6 +147,8 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 		\mathscr{H} = \sum_{\vec{k},s}  \left( \frac{p^2_{\vec{k}s}}{2}+ \frac{\omega^2_{\vec{k}} q_{\vec{k}s}^2}{2} \right).
 	\end{equation}
 	
+	\subsection{Field quantization}
+	
 	If we can write full energy of the system like $\mathscr{H} \sim p^2/2 + \omega^2 q^2/2$, then it means this system can be quantize.  So next, we  \textit{quantize fields}. First of all we need to move to operators by doing
 	\begin{equation}
 		\begin{cases}
@@ -209,4 +211,59 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	\begin{equation}
 		\boxed{\hat{\vec{H}} = \sum_{\vec{k},s} A_{\vec{k}} \left( i \hat{a}_{\vec{k}s} \left[ \vec{k} \times \vec{e}_{\vec{k}s} \right] e^{i \vec{k} \vec{r}} + \text{ e.c. } \right).}
 	\end{equation}
+	\textit{\underline{Remark:}} Electric field $\vec{E}$ satisfies  wave equation $\square \vec{E} = 0$ at the same time. We could quantize it:
+	\begin{eqnarray}
+		\vec{E} &=& \sum \varepsilon_{\vec{k}} \left[ \hat{a}_{\vec{k}} \vec{e}_{\vec{k}s} e^{i \vec{k} \vec{r}} + \text{ c.c. } \right], \\
+		\vec{H} &=& \sum A_{\vec{k}} \left[ -i\hat{a}_{\vec{k}} \left[ \vec{k} \times \vec{e}_{\vec{k}s} \right] e^{i\vec{k}\vec{r}} + \text{ c.c. } \right].
+	\end{eqnarray}
 	
+	
+	\subsection{Ladder operators. Fock state. Second quantization}
+	
+	First of all lets write how ladder operators work:
+	\begin{equation}
+		\begin{matrix}
+			\hat{a}_{\vec{k}s} \ket{n_{\vec{k}s}} &=& \sqrt{n_{\vec{k}s}} \ket{n_{\vec{k}s}-1}, & \quad & \hat{a}_{\vec{k}s} \ket{0} = \ket{0}, \\ \\
+			\hat{a}^{\dagger}_{\vec{k}s} \ket{n_{\vec{k}s}} &=& \sqrt{n_{\vec{k}s}+1} \ket{n_{\vec{k}s}-1}, & \quad & \hat{a}^{\dagger}_{\vec{k}s} \ket{0} = \ket{1}.
+		\end{matrix}
+	\end{equation}
+	
+	Another important operator is of quantity of particles $\hat{n}_{\vec{k}s} = \hat{a}^{\dagger}_{\vec{k}s} \hat{a}_{\vec{k}s}$ in $\vec{k}s$ mode:
+	\begin{equation}
+		\hat{n}_{\vec{k}s} \ket{n_{\vec{k}s}} = n_{\vec{k}s} \ket{n_{\vec{k}s}}.
+	\end{equation} 
+	Another import remark: $\ket{n_{\vec{k}s}}$ --- it is a state with wave vector $\vec{k}$ and state $s$ which has \textit{exactly} $n$ photos.
+	
+	
+	Let us make things more clear, by discussing a bit about denotations:
+	\begin{equation}
+		\ket{n_{\vec{k}s}} \qquad \longleftrightarrow \qquad \psi_n^{\vec{k}s} (x).
+	\end{equation}
+	Besides, any wave function can decomposed
+	on the basis (if the basis is full):
+	\begin{equation}
+		\psi(x) = \sum C_n \varphi_n(x),
+	\end{equation}
+	so it's equivalent
+	\begin{equation}
+		\psi(x) \qquad \longleftrightarrow \qquad \left( \begin{matrix}
+			C_1 \\ 
+			\vdots \\
+			C_n
+		\end{matrix} \right).
+	\end{equation} 
+	Column of numbers $\left(C_1, \dots , C_n\right)^T$ is a vector in Hilbert space --- bra- or ket-vector. For example
+	\begin{equation}
+		\ket{\frac{1}{\sqrt{2}},0,\frac{1}{\sqrt{2}},0} \qquad \longleftrightarrow \qquad \frac{1}{\sqrt{2}} \varphi_1(x) + \frac{1}{\sqrt{2}} \varphi_3(x).
+	\end{equation}
+	In particular, Fock state can be written as
+	\begin{equation}
+		\ket{n} = \ket{0, \dots, 0, \underbrace{1}_{\text{n-th place}}, 0, \dots , 0}.
+	\end{equation}
+	
+	\subsection{Fields' fluctuation}
+	
+	Let consider single mode field:
+	\begin{equation}
+		E_x(0) = \varepsilon \hat{a} + \varepsilon^* \hat{a}^{\dagger}.
+	\end{equation}
