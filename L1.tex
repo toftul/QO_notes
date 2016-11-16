@@ -265,5 +265,30 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	
 	Let consider single mode field:
 	\begin{equation}
-		E_x(0) = \varepsilon \hat{a} + \varepsilon^* \hat{a}^{\dagger}.
+		\hat{E}_x(0) = \varepsilon \hat{a} + \varepsilon^* \hat{a}^{\dagger}.
 	\end{equation}
+	Let's compute the average field:
+	\begin{equation}
+		\bra{n} \hat{E}_x \ket{n} = \varepsilon \bra{n} \hat{a} \ket{n} + \text{ e.c.} = 0,
+	\end{equation}
+	because $\bra{n} \hat{a} \ket{n} = \sqrt{n} \braket{n}{n-1} = 0$.
+	
+	The average of $\hat{E}^2$ gives us the following
+	\begin{equation}
+		\bra{n} \hat{E}^2_x \ket{n} = \left| \varepsilon \right|^2 \bra{n} \hat{a} \hat{a}^{\dagger} \ket{n} + \left| \varepsilon \right|^2 \bra{n} \hat{a}^{\dagger} \hat{a} \ket{n} = 2 \left| \varepsilon \right|^2 \bra{n} \hat{n} + \frac{1}{2} \ket{n} = 2 \left| \varepsilon \right|^2 \left( n + \frac{1}{2} \right).
+	\end{equation}
+	Here we can make a few conclusions: \textbf{a)} the average field is zero; \textbf{b)} in vacuum state ($n=0$) \textit{fluctuations are not zero}!
+	
+	
+	A standard calculation procedure of fluctuation of any variable $X$ in $\ket{n}$ state is the following:
+	\begin{equation}
+		\Delta X = \sqrt{\bra{n} \hat{X}^2 \ket{n} - \bra{n} \hat{X} \ket{n}^2 }.
+	\end{equation}
+	
+	\textit{Remark:} for many modes we get
+	\begin{multline}
+		\sum_{\vec{k},s} \bra{n_{\vec{k}s}} \hat{\vec{E}}^2 \ket{n_{\vec{k}s}} = \sum_{\vec{k},s} 2 \left| \varepsilon_{\vec{k}s} \right|^2 \left( n_{\vec{k}s} + \frac{1}{2} \right) \Bigg|_{n_{\vec{k}s} = 0}  =  \sum_{\vec{k},s} 2 \left| \varepsilon_{\vec{k}s} \right|^2  =
+		\sum_{\vec{k},s} \frac{2 \pi \hbar \omega_{\vec{k}}}{L^3} = \\ = \sum_{\vec{k},s} \frac{\hbar \omega_{\vec{k}}}{(2 \pi)^2} \Delta k_x \Delta k_y \Delta k_z \Bigg|_{L \to \infty} = \frac{2}{(2 \pi)^3} \int d^3 p \hbar \omega_{\vec{k}} = \frac{2 \cdot 4 \pi}{(2 \pi)^2} \frac{\hbar}{c^3} \int \limits_0^{\infty} \omega^3 d  \omega \to \infty.
+	\end{multline}
+	
+	\subsection{Casimir effect (NOT FINISHED)}
