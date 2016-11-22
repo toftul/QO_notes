@@ -1,4 +1,46 @@
 \section{Coherent states}
 
+\subsection{Eigenfunction of $\hat{a}$}
 
-It is quite obvious that 
+Let us consider only one emission mode. We will be looking for those photons' states which allow us to get more obvious world outlook (!!проблемы с распознованием оригинала текста!!). In particular we want $\hat{\vec{E}}$ be measurable. So, at first, we need to find eigenfunction of annihilation operator $\hat{a}$.
+
+The first naive idea that may come to mind is to check Fock states. Let's look closer at matrix elements
+\begin{equation}
+	\bra{m} \hat{a} \ket{n} = 
+	\begin{pmatrix}
+		0 & \sqrt{1} & 0 &  \cdots  & 0 & \cdots \\
+		0 & 0 & \sqrt{2} &  \cdots & 0 & \cdots \\
+		\vdots & \vdots & \ddots & \ddots & \vdots  & \cdots \\
+		0 & \vdots & \cdots & 0 & \sqrt{n} & \cdots \\
+		\vdots & \vdots & \vdots & \vdots & \vdots & \ddots\\
+	\end{pmatrix}.
+\end{equation}
+Now it's clear that $\hat{a}$ is not a eigenfunction because there now element on the main diagonal.
+
+The ordinary procedure to find eigenfunction is the following. $\ket{\alpha}$ should satisfy 
+\begin{equation}
+	\hat{a} \ket{\alpha} = \alpha \ket{\alpha}.
+\end{equation}  
+Fock states form full basis, so we can write
+\begin{equation}
+	\ket{\alpha} = \sum_{n=1}^{\infty} c_n \ket{n},
+\end{equation}
+then
+\begin{equation}
+	\hat{a} \ket{\alpha} = \sum_{n=1}^{\infty} c_n \hat{a} \ket{n} = \sum_{n=1}^{\infty} c_n \sqrt{n} \ket{n-1} = \sum_{n=0}^{\infty} \sqrt{n+1} \ket{n} = \alpha \sum_{n=1}^{\infty} c_n \ket{n},
+\end{equation}
+which gives the recurrent relation
+\begin{equation}
+	c_{n+1} \sqrt{n+1} = c_n \alpha \qquad \to \qquad c_n = \frac{\alpha^n}{\sqrt{n!}} c_0 \qquad \to \qquad \ket{\alpha} = c_0 \sum_{n=0}^{\infty} \frac{\alpha^n}{\sqrt{n!}} \ket{n}.
+\end{equation}
+The constant $c_0$ can be found from the normalization condition: 
+\begin{equation}
+	\braket{\alpha}{\alpha} = 1 \quad \to \quad 1 = \left|c_0\right|^2 \sum_{n,m = 0}^{\infty} \frac{\left( \alpha^* \right)^m \alpha^n}{\sqrt{m!n!}} \underbrace{\braket{m}{n}}_{\hookrightarrow  \delta_{mn}} = \left|c_0\right|^2 \sum_{n = 0}^{\infty} \frac{\left|\alpha\right|^2}{n!},
+\end{equation}
+\begin{equation}
+	c_0 = e^{- \left|\alpha\right|^2/2} e^{i \varphi}
+\end{equation}
+and finally
+\begin{equation}
+	\boxed{\ket{\alpha} = e^{- \left|\alpha\right|^2/2} e^{i \varphi} \sum_{n = 0}^{\infty} \frac{\alpha^n}{\sqrt{n!}} \ket{n}.}
+\end{equation}
