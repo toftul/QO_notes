@@ -74,13 +74,13 @@
 	\begin{equation}
 		\vec{A}(\vec{r},t) = \sum_{\vec{k}} \vec{A}_{\vec{k}}(t) e^{i \vec{k} \vec{r}}, \qquad k_{\alpha} = \frac{2 \pi n_{\alpha}}{L}, \quad \alpha = x,y,z.
 	\end{equation}
-	%Where $\vec{n}$ --- a unit vector. 
+	%Where $\vec{n}$ --- a unit vector.
 \textcolor{red}{Where $n_{\alpha}$ --- is an integer number.}
 As waves are plane then we should write
 	\begin{equation}
 		\vec{A}_{\vec{k}}(t) = \vec{c}_{\vec{k}} e^{-i \omega_{\vec{k}}t} + \vec{c}_{-\vec{k}}^* e^{i \omega_{\vec{k}}t},
 	\end{equation}
-	where $\omega_{\vec{k}} = c k = c\sqrt{k_x^2 + k_y^2 + k_z^2}$. 
+	where $\omega_{\vec{k}} = c k = c\sqrt{k_x^2 + k_y^2 + k_z^2}$.
 Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 \begin{equation}\label{kminsk}
 		\vec{A}_{\vec{k}}(t)=\vec{A}_{\vec{k}}^*(t) = \vec{c}_{-\vec{k}} e^{-i \omega_{\vec{k}}t}+ \vec{c}_{\vec{k}}^* e^{i \omega_{\vec{k}}t}=\vec{A}_{\vec{-k}}(t),
@@ -88,7 +88,7 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	The Lorentz gauge leads to the fact that \textit{waves are transverse}:
 	\begin{equation}
 		\Div \vec{A} = 0 \quad \to \quad \sum \vec{k} \vec{A}_{\vec{k}} e^{i \vec{k} \vec{r}} = 0 \quad \Longleftrightarrow \quad \boxed{\vec{A}_{\vec{k}}(t) \cdot \vec{k} = 0.}
-	\end{equation} 
+	\end{equation}
 	
 	Consider a wave with wave vector $\vec{k}$. According to Maxwell equations, there are two independent polarizations, so we introduce two transverse polarization vectors $\vec{e}_{\vec{k}1}; \vec{e}_{\vec{k}2}$. Three vectors $(\vec{e}_{\vec{k}1}; \vec{e}_{\vec{k}2}; \vec{k}/k)$ form a right-handed orthonormal basis which implies:
 	\begin{equation}
@@ -113,7 +113,7 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	The energy of EM field
 	\begin{equation}
 		\mathscr{H} = \frac{1}{8 \pi} \int \left(\vec{H}^2 + \vec{E}^2 \right) dV.
-	\end{equation} 
+	\end{equation}
 	\textit{Remark:} there is no averaging over time!
 	
 	To make next calculations easier, let us notice that
@@ -159,12 +159,12 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 		p_{\vec{k}s} \to \hat{p}_{\vec{k}s}.
 		\end{cases}
 	\end{equation}
-	After that our Hamiltonian function will transform to Mr. Hamiltonian. 
+	After that our Hamiltonian function will transform to Mr. Hamiltonian.
 	Besides, coordinate and impulse operator must obey next commutation relations:
 	\begin{equation}
 		\left[\hat{q}_{\vec{k}s} ; \hat{p}_{\vec{k}'s'} \right] = i \hbar \delta^{(3)}_{\vec{k}\vec{k}'} \delta_{ss'},
 		\label{eq:con1}
-	\end{equation} 
+	\end{equation}
 	\begin{equation}
 		\left[\hat{q}_{\vec{k}s} ; \hat{q}_{\vec{k}'s'} \right] = \left[\hat{p}_{\vec{k}s} ; \hat{p}_{\vec{k}'s'} \right] = 0.
 		\label{eq:con2}
@@ -177,7 +177,12 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	Relations \eqref{eq:con1}, \eqref{eq:con2} and \eqref{eq:con3} impose conditions for $\hat{q}_{\vec{k}s}$ and $\hat{p}_{\vec{k}s}$.
 	Hereafter we can introduce ladder operators:
 	\begin{eqnarray}
-		\hat{a}_{\vec{k}s}(t) &=& \dfrac{1}{\sqrt{2 \hbar \omega}} \left( \omega \hat{q}_{\vec{k}s} + i \hat{p}_{\vec{k}s} \right), \\ \nonumber \\
+		\hat{a}_{\vec{k}s}(t) &=& \dfrac{1}{\sqrt{2 \hbar \omega}} \left( \omega \hat{q}_{\vec{k}s} + i \hat{p}_{\vec{k}s} \right), %\\ \nonumber \\
+\end{eqnarray}
+
+  {\textcolor{red}{ And his conjugated friend }} 
+  
+  \begin{eqnarray}
 		\hat{a}^{\dagger}_{\vec{k}s}(t) &=& \dfrac{1}{\sqrt{2 \hbar \omega}} \left( \omega \hat{q}_{\vec{k}s} - i \hat{p}_{\vec{k}s} \right).
 	\end{eqnarray}
 	This leads to the useful representation of $\hat{q}_{\vec{k}s}$ and $\hat{p}_{\vec{k}s}$:
@@ -234,7 +239,7 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	Another important operator is of quantity of particles $\hat{n}_{\vec{k}s} = \hat{a}^{\dagger}_{\vec{k}s} \hat{a}_{\vec{k}s}$ in $\vec{k}s$ mode:
 	\begin{equation}
 		\hat{n}_{\vec{k}s} \ket{n_{\vec{k}s}} = n_{\vec{k}s} \ket{n_{\vec{k}s}}.
-	\end{equation} 
+	\end{equation}
 	Another import remark: $\ket{n_{\vec{k}s}}$ --- it is a state with wave vector $\vec{k}$ and state $s$ which has \textit{exactly} $n$ photos.
 	
 	
@@ -250,11 +255,11 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	so it's equivalent
 	\begin{equation}
 		\psi(x) \qquad \longleftrightarrow \qquad \left( \begin{matrix}
-			C_1 \\ 
+			C_1 \\
 			\vdots \\
 			C_n
 		\end{matrix} \right).
-	\end{equation} 
+	\end{equation}
 	Column of numbers $\left(C_1, \dots , C_n\right)^T$ is a vector in Hilbert space --- bra- or ket-vector. For example
 	\begin{equation}
 		\ket{\frac{1}{\sqrt{2}},0,\frac{1}{\sqrt{2}},0} \qquad \longleftrightarrow \qquad \frac{1}{\sqrt{2}} \varphi_1(x) + \frac{1}{\sqrt{2}} \varphi_3(x).
@@ -280,7 +285,7 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	\begin{equation}
 		\bra{n} \hat{E}^2_x \ket{n} = \left| \varepsilon \right|^2 \bra{n} \hat{a} \hat{a}^{\dagger} \ket{n} + \left| \varepsilon \right|^2 \bra{n} \hat{a}^{\dagger} \hat{a} \ket{n} = 2 \left| \varepsilon \right|^2 \bra{n} \hat{n} + \frac{1}{2} \ket{n} = 2 \left| \varepsilon \right|^2 \left( n + \frac{1}{2} \right).
 	\end{equation}
-	Here we can make a few conclusions: \textbf{a)} the average field is zero; \textbf{b)} in vacuum state ($n=0$) \textit{fluctuations are not zero}!
+	Here we can make a few conclusions: \textbf{a)} the average field is zero {\textcolor{red}{ for any Fock state }}; \textbf{b)} in vacuum state ($n=0$) \textit{fluctuations are {\textcolor{red}{ minimal, but }} not zero}!
 	
 	
 	A standard calculation procedure of fluctuation of any variable $X$ in $\ket{n}$ state is the following:
@@ -288,10 +293,11 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 		\Delta X = \sqrt{\bra{n} \hat{X}^2 \ket{n} - \bra{n} \hat{X} \ket{n}^2 }.
 	\end{equation}
 	
-	\textit{Remark:} for many modes we get
+	\textit{Remark:} for many modes we get 
 	\begin{multline}
 		\sum_{\vec{k},s} \bra{n_{\vec{k}s}} \hat{\vec{E}}^2 \ket{n_{\vec{k}s}} = \sum_{\vec{k},s} 2 \left| \varepsilon_{\vec{k}s} \right|^2 \left( n_{\vec{k}s} + \frac{1}{2} \right) \Bigg|_{n_{\vec{k}s} = 0}  =  \sum_{\vec{k},s} 2 \left| \varepsilon_{\vec{k}s} \right|^2  =
 		\sum_{\vec{k},s} \frac{2 \pi \hbar \omega_{\vec{k}}}{L^3} = \\ = \sum_{\vec{k},s} \frac{\hbar \omega_{\vec{k}}}{(2 \pi)^2} \Delta k_x \Delta k_y \Delta k_z \Bigg|_{L \to \infty} = \frac{2}{(2 \pi)^3} \int d^3 p \hbar \omega_{\vec{k}} = \frac{2 \cdot 4 \pi}{(2 \pi)^2} \frac{\hbar}{c^3} \int \limits_0^{\infty} \omega^3 d  \omega \to \infty.
 	\end{multline}
+{\textcolor{red}{ So, fluctuations are infinite for multimode vacuum state }} 
 	
-	\subsection{Casimir effect (NOT FINISHED)}
+	\subsection{Casimir effect (NOT FINISHED)} 
