@@ -1,5 +1,7 @@
 \section{Coherent states}
 
+\epigraph{Из всех родов, видов, сортов и пород людей самая гнусная --- теоретики.}{\sout{А. Куприн} \\Д. А. Байко}
+
 \subsection{Eigenfunction}
 
 Let us consider {\textcolor{red}{ singlemode field }}.
@@ -203,4 +205,38 @@ The uncertainty relation will be
 \begin{equation}
 	\boxed{\Delta p_{\alpha} \Delta q_{\alpha} = \frac{\hbar}{2} \quad \slashed{\sim} \quad  \alpha.}
 \end{equation}
-Here we see that $\Delta p_{\alpha} \Delta q_{\alpha}$ relation does not depend on $\alpha$!
+Here we see that $\Delta p_{\alpha} \Delta q_{\alpha}$ relation does not depend on $\alpha$! In fact we obtained a shifted Fock state (fig \ref{fig:shifted_Fock}).
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{fig/L2/shifted_Fock}
+	\caption{Shifted Fock states}
+	\label{fig:shifted_Fock}
+\end{figure}
+
+It conveys the suggestion that a linear operator $\hat{D}(\alpha)$ exist which does this shifting (so-termed \textit{the displacement operator}). In other words
+\begin{equation}
+	\ket{\alpha} = \hat{D} (\alpha) \ket{0},
+\end{equation} 
+\begin{equation}
+	e^{-|\alpha|^2/2} \sum_{n=0}^{\infty} \frac{\alpha^n}{\sqrt{n!}} \ket{n}  = \hat{D} (\alpha) \ket{0},
+\end{equation}
+and since $\ket{n} = \frac{\left( \hat{a}^{\dagger} \right)^n}{\sqrt{n!}} \ket{0}$, so
+\begin{equation}
+	D(\alpha) = e^{-|\alpha|^2/2} e^{\alpha \hat{a}^{\dagger}} e^{- \alpha^* \hat{a}}.
+\end{equation}
+\textit{Remark:} factor $e^{- \alpha^* \hat{a}}$ does not change the result (because $e^{- \alpha^* \hat{a}} \ket{0} = \ket{0}$), but gives some additional properties to the $\hat{D}(\alpha)$:
+\begin{enumerate}
+	\item The displacement operator is a unitary operator. It means that $\hat{D}(\alpha) \hat{D}^{\dagger}(\alpha) = \hat{D}^{\dagger}(\alpha) \hat{D}(\alpha) = \hat{\mathbb{1}}$. 
+	\item Since $\hat{D}^{\dagger}(\alpha) = \hat{D}(-\alpha)$, the hermitian conjugate of the displacement operator can also be interpreted as a displacement of opposite magnitude.
+	\item Following relations hold: 
+	\begin{eqnarray}
+		\hat{D}^{\dagger} (\alpha) \hat{a} \hat{D} (\alpha) &=& \hat{a} + \alpha, \\
+		\hat{D} (\alpha) \hat{a} \hat{D}^{\dagger} (\alpha) &=& \hat{a} - \alpha, \\
+		\hat{D} (\alpha) \hat{D} (\beta) &=& e^{(\alpha \beta^* - \alpha^* \beta)/2} \hat{D} (\alpha + \beta).
+	\end{eqnarray}
+\end{enumerate}
+
+In many practical cases a natural question appears: \textit{is it possible to overcome the limit of} $\Delta p_{\alpha} \Delta q_{\alpha} = \frac{\hbar}{2}$ \textit{to get more accurate measurements?}
+
+\subsection{Squeezed states}
