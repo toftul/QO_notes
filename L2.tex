@@ -68,7 +68,7 @@ and finally
 	\end{equation}
 %\end{testexample}
 
-Another important thing to calculate. Let us find the probability of $n$ be in $\ket{\alpha}$ state:
+Another important thing to calculate. Let us find the probability of $n$ {\textcolor{red}{photons}} be in $\ket{\alpha}$ state:
 \begin{equation}
 	p_n = \left| \braket{n}{\alpha} \right|^2 = e^{- \left|\alpha\right|^2} \frac{\left|\alpha\right|^{2n}}{n!}.
 \end{equation}
@@ -126,7 +126,7 @@ will be simplified to
 \begin{equation}
 	\hat{\vec{E}} = \varepsilon \left( \hat{a} \vec{e} e^{i \vec{k} \vec{r} - \omega t} + \text{ e. c.}\right).
 \end{equation}
-Mean value 
+Mean value
 \begin{equation}
 	\vec{E} = \bra{\alpha} \hat{\vec{E}} \ket{\alpha} = \varepsilon \alpha \vec{e} e^{i \vec{k} \vec{r} - \omega t} + \text{ c. c.} \myeq \vec{E}_+(\vec{r},t) + \vec{E}_-(\vec{r},t).
 \end{equation}
@@ -143,11 +143,11 @@ From here it is clear that $\varepsilon^2$ stands for the square of electric fie
 	E_+ = \varepsilon \left|\alpha\right| e^{i \varphi}.
 \end{equation}
 
-Another property of coherent states. Since 
+Another property of coherent states. Since
 \begin{equation}
 	\hat{a} \ket{\alpha} = \alpha \ket{\alpha},
 \end{equation}
-then number of photons in the system does not change!
+then number of photons in the system does not change! {\textcolor{red}{WAT}}
 
 
 \subsection{Fluctuations}
@@ -167,19 +167,19 @@ and
 \end{eqnarray}
 So we have
 \begin{equation}
-	\Delta p = \sqrt{\overline{p^2} - \overline{p}^2} = \sqrt{\frac{\hbar \omega}{2}} \sqrt{\left( 2n+1 \right)}, 
+	\Delta p = \sqrt{\overline{p^2} - \overline{p}^2} = \sqrt{\frac{\hbar \omega}{2}} \sqrt{\left( 2n+1 \right)},
 \end{equation}
 \begin{equation}
 	\Delta q = \sqrt{\overline{q^2} - \overline{q}^2} = \sqrt{\frac{\hbar }{2\omega}} \sqrt{\left( 2n+1 \right)}.
 \end{equation}
-Now we can the uncertainty principle as following
+Now we can {\textcolor{red}{chew out}} the uncertainty principle as following
 \begin{equation}
 	\Delta p \Delta q = \frac{\hbar}{2} \left(2n+1\right).
 \end{equation}
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.4\linewidth]{fig/L2/fluc}
+	\includegraphics[width=0.4\linewidth]{fig/L2/fluc2}
 	\caption{Fluctuations of the Fock states}
 	\label{fig:fluc}
 \end{figure}
@@ -205,7 +205,7 @@ The uncertainty relation will be
 \begin{equation}
 	\boxed{\Delta p_{\alpha} \Delta q_{\alpha} = \frac{\hbar}{2} \quad \slashed{\sim} \quad  \alpha.}
 \end{equation}
-Here we see that $\Delta p_{\alpha} \Delta q_{\alpha}$ relation does not depend on $\alpha$! In fact we obtained a shifted Fock state (fig \ref{fig:shifted_Fock}).
+Here we see that $\Delta p_{\alpha} \Delta q_{\alpha}$ relation does not depend on $\alpha$! In fact we obtained a shifted {\textcolor{red}{ground}} Fock state (fig \ref{fig:shifted_Fock}).
 
 \begin{figure}
 	\centering
@@ -217,7 +217,7 @@ Here we see that $\Delta p_{\alpha} \Delta q_{\alpha}$ relation does not depend 
 It conveys the suggestion that a linear operator $\hat{D}(\alpha)$ exist which does this shifting (so-termed \textit{the displacement operator}). In other words
 \begin{equation}
 	\ket{\alpha} = \hat{D} (\alpha) \ket{0},
-\end{equation} 
+\end{equation}
 \begin{equation}
 	e^{-|\alpha|^2/2} \sum_{n=0}^{\infty} \frac{\alpha^n}{\sqrt{n!}} \ket{n}  = \hat{D} (\alpha) \ket{0},
 \end{equation}
@@ -227,9 +227,13 @@ and since $\ket{n} = \frac{\left( \hat{a}^{\dagger} \right)^n}{\sqrt{n!}} \ket{0
 \end{equation}
 \textit{Remark:} factor $e^{- \alpha^* \hat{a}}$ does not change the result (because $e^{- \alpha^* \hat{a}} \ket{0} = \ket{0}$), but gives some additional properties to the $\hat{D}(\alpha)$:
 \begin{enumerate}
-	\item The displacement operator is a unitary operator. It means that $\hat{D}(\alpha) \hat{D}^{\dagger}(\alpha) = \hat{D}^{\dagger}(\alpha) \hat{D}(\alpha) = \hat{\mathbb{1}}$. 
+	\item Using the Hausdorff relation we can get an alternative from of the displacement operator:
+	\begin{equation}
+		\hat{D}(\alpha) = e^{\alpha \hat{a}^{\dagger} - \alpha^* \hat{a}}.
+	\end{equation}
+	\item The displacement operator is a unitary operator. It means that $\hat{D}(\alpha) \hat{D}^{\dagger}(\alpha) = \hat{D}^{\dagger}(\alpha) \hat{D}(\alpha) = \hat{\mathbb{1}}$.
 	\item Since $\hat{D}^{\dagger}(\alpha) = \hat{D}(-\alpha)$, the hermitian conjugate of the displacement operator can also be interpreted as a displacement of opposite magnitude.
-	\item Following relations hold: 
+	\item Following relations hold:
 	\begin{eqnarray}
 		\hat{D}^{\dagger} (\alpha) \hat{a} \hat{D} (\alpha) &=& \hat{a} + \alpha, \\
 		\hat{D} (\alpha) \hat{a} \hat{D}^{\dagger} (\alpha) &=& \hat{a} - \alpha, \\
@@ -239,4 +243,66 @@ and since $\ket{n} = \frac{\left( \hat{a}^{\dagger} \right)^n}{\sqrt{n!}} \ket{0
 
 In many practical cases a natural question appears: \textit{is it possible to overcome the limit of} $\Delta p_{\alpha} \Delta q_{\alpha} = \frac{\hbar}{2}$ \textit{to get more accurate measurements?}
 
-\subsection{Squeezed states}
+\subsection{Squeezed states or getting the maximum accuracy!}
+
+Sure, we cannot break the uncertainty principle but we can title the balance of scales for ours good. The main idea is to \textit{squeeze} light state, by geometrical meaning should make an oval from the circle (see fig \ref{fig:sheeeeeeit}).
+
+\begin{figure}[h]
+	\begin{minipage}{0.5 \linewidth}
+		\center{\includegraphics[width=0.7\linewidth]{fig/L2/squeeeeeze_amp} \\ a)}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5 \linewidth}
+		\center{\includegraphics[width=0.7\linewidth]{fig/L2/squeeeeeze_phase} \\ b)}
+	\end{minipage}
+	\caption{Different light sates on a phase plane: (a) amplitude-squeezed light, (b) phase-squeezed light.}
+	\label{fig:sheeeeeeit}
+\end{figure}
+
+Let us recall what one property of coherent states
+\begin{equation}
+	\bra{\alpha} \hat{\vec{E}} \ket{\alpha} = \vec{E} (\vec{r},t).
+\end{equation}
+From the other hand we have
+\begin{equation}
+	\bra{n} \hat{\vec{E}} \ket{n} = 0.
+\end{equation}
+But now if we take into account fluctuations then we get what is shown on fig \ref{fig:noise_MC}. Considering coherent states, lets write a very simplified field time dependence:
+\begin{equation}
+	E = \varepsilon \left( |\alpha| + \delta \alpha\right) \cos \left[ \omega t + \varphi + \delta \varphi \right],
+\end{equation}
+where $\delta \alpha$ and $\delta \varphi$ --- fluctuations. For squeezing we will get another picture --- fig \ref{fig:eeeEEeee}.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.65\linewidth]{fig/L2/noise_MC}
+	\caption{Field fluctuations for $\ket{\alpha}$ and $\ket{n}$ without squeezing {\textcolor{red}{Here is only ground Fock state shown, next states have greater fluctuations}}}
+	\label{fig:noise_MC}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{fig/L2/eeeEEeee}
+	\caption{Field fluctuations for squeezed light}
+	\label{fig:eeeEEeee}
+\end{figure}
+
+To get quantitative and more specific description one can use \textit{the squeeze operator}:
+\begin{equation}
+	\hat{S} \left( \xi \right) \ket{\alpha} = \ket{\alpha, \xi},
+\end{equation}
+where $|\xi|$ --- ratio of the main semiaxes of squeezed state, $\arg  \xi $ --- a turning angle.
+
+Here are some helpful properties of the squeeze operator:
+\begin{enumerate}
+	\item It make be written as following:
+	\begin{equation}
+		\hat{S} = e^{\xi \hat{a}^{\dagger 2} - \xi^* \hat{a}^2}.
+		\label{eq:SS}
+	\end{equation}
+	\item It is commutative with displacement operator:
+	\begin{equation}
+		\hat{S} (\xi) \hat{D} (\alpha) \neq  \hat{D} (\alpha) \hat{S} (\xi).
+	\end{equation}
+\end{enumerate}
+
+Lets draw attention to \eqref{eq:SS}. We can notice that squeeze operator $\hat{S}$ consist of squares of ladder operators ($\sim \hat{a}^{\dagger 2}, \hat{a}^{2}$). It means here we have a generation of second harmonic ($2 \hbar \omega$ instead of $\hbar \omega$). In other words,  from a experimenter's point of view, to get the squeezed state one needs a non-linear optical element with $\chi_2 \neq 0$, so it's polarizability $P = \chi_1 E + \chi_2 E^2$.

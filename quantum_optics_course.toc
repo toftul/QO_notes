@@ -11,4 +11,6 @@
 \contentsline {subsection}{\numberline {2.1}Eigenfunction}{8}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Orthogonality}{9}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Fluctuations}{10}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Squeezed states}{12}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.4}Squeezed states or getting the maximum accuracy!}{12}{subsection.2.4}
+\contentsline {section}{\numberline {3}The coherence of light}{15}{section.3}
+\contentsline {subsection}{\numberline {3.1}Bunching and antibunching of photons}{15}{subsection.3.1}
