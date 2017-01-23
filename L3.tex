@@ -61,9 +61,41 @@ So in fact one measured the average of $\Delta i_1$ and $\Delta i_2$. To study t
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.6\linewidth]{fig/L3/HBT_exp}
-	\caption{Schematic diagram of the Hanbury Brown-Twiss stellar intensity interferometer. Here $P_1$ and $P_2$ are photodetectors, $A_1$ and $A_2$ are the mirrors, $B_1$ and $B_2$ are the amplifiers, $\tau$ is the delay time, $C$ is a multiplier, and $M$ is the integrator}
+	\begin{minipage}[h]{0.70\linewidth}
+		\center{\includegraphics[width=1\linewidth]{fig/L3/HBT_first}} a) Light beam mode\\
+	\end{minipage}
+	\vfill
+	\begin{minipage}[h]{0.7\linewidth}
+		\center{\includegraphics[width=1\linewidth]{fig/L3/HBT_second}} \\b) Single photon mode
+	\end{minipage}
+	\caption{Schematic diagram of the Hanbury Brown-Twiss intensity interferometer. Here $P_1$ and $P_2$ are photodetectors, $\tau$ is the delay time, $C$ is a multiplier, and $M$ is the integrator}
 	\label{fig:HBT_exp}
 \end{figure}
 
+Lets analyze the second order correlator:
+\begin{equation}
+	g^{(2)} (\tau) = 1 + \frac{\langle \Delta i(t) \Delta i (t + \tau) \rangle}{i_0^2}.
+\end{equation}
+Here can single out some properties:
+\begin{enumerate}
+	\item $g^{(2)}(0) = 1 + \frac{\langle \Delta i^2 (t) \rangle}{i_0^2} \geq 1 $.
+	\item $\lim\limits_{\tau \to \infty} g^{(2)}(\tau) = 1$.
+	\item $g^{(2)}(0) \geq g^{(2)}(\tau)$. 
+\end{enumerate}
+To summarize we could guess that approximate plot of $g^{(2)}(\tau)$ is as it shown of fig. \ref{fig:g2tau_apprx} with a solid line.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\linewidth]{fig/L3/g2tau_apprx}
+	\caption{Approximate plot of $g^{(2)}(\tau)$}
+	\label{fig:g2tau_apprx}
+\end{figure}
 
+During measuring noises, which were mentioned thereinbefore, experimentalists got the next weird result:
+\begin{equation}
+	g^{(2)}(\tau) < 1.
+\end{equation}
+This effect is called \textit{photon bunching}. But a few lines above it was shown that $g^{(2)}(\tau) \geq 1$. How could it be possible? 
+
+Let us consider the same experiments but with a single photons emitter (fig. \ref{fig:HBT_exp} b). Assume $\tau = 0$, so then we calculate how photon at place $1$ is correlated with a photon at place $1'$. If our light source emits discreate photos then single photon cannot be at two places at the same time, so $g^{(2)}(0) = 0$.
+
+\subsection{Quantum theory of photodetection}
