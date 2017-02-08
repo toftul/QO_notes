@@ -99,3 +99,84 @@ This effect is called \textit{photon bunching}. But a few lines above it was sho
 Let us consider the same experiments but with a single photons emitter (fig. \ref{fig:HBT_exp} b). Assume $\tau = 0$, so then we calculate how photon at place $1$ is correlated with a photon at place $1'$. If our light source emits discreate photos then single photon cannot be at two places at the same time, so $g^{(2)}(0) = 0$.
 
 \subsection{Quantum theory of photodetection}
+
+Photons are described by field operators
+\begin{equation}
+	\hat{\vec{E}} = \hat{\vec{E}}^+ + \hat{\vec{E}}^-,
+\end{equation}
+where
+\begin{eqnarray}
+	\hat{\vec{E}}^+ = \sum_{\vec{k}} \varepsilon_{\vec{k}} \hat{a}_{\vec{k}} e^{i \vec{k} \vec{r} - i \omega t} \vec{e}_{\vec{k}}, \\
+	\hat{\vec{E}}^- = \sum_{\vec{k}} \varepsilon_{\vec{k}} \hat{a}^{\dagger}_{\vec{k}} e^{-i \vec{k} \vec{r} + i \omega t} \vec{e}^*_{\vec{k}}.
+\end{eqnarray}
+
+\begin{figure}[h!]
+	\begin{minipage}[h]{0.49\linewidth}
+		\center{\includegraphics[width=0.6\linewidth]{fig/L3/dec} \\ a)}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[h]{0.49\linewidth}
+		\center{\includegraphics[width=0.7\linewidth]{fig/L3/lev} \\ b)}
+	\end{minipage}
+	\caption{a) An indecent photon generate an electron which brings current; b) Atom states}
+	\label{fig:dec}
+\end{figure}
+
+
+To simplify all the calculations let us consider only \textit{one mode} and only \textit{one linear polarisation} of field:
+\begin{equation}
+	\hat{\vec{E}}^+ = \hat{E}^+ \vec{e}_{\vec{k}}.
+\end{equation}
+When an indecent photon got absorbed, it makes detector atom to become excited: $\ket{i} \to \ket{f}$ (see fig. \ref{fig:dec}, b).
+
+
+The probability of  absorption of one photon (= the probability of detection of one photon) depends only on operator $\hat{E}^+$ due to detection principle (see fig. \ref{fig:dec}). The transition probability of the detector atom for absorbing a photon from the field at position $\vec{r}$ between times $t$ and $t+dt$ is proportional to $\omega_1(\vec{r},t) dt$, with
+\begin{equation}
+	\omega_1 (\vec{r}, t) = \sum_{f} \left| \bra{f} \hat{E}^{+} \ket{i} \right|^2 = \sum_{f} \bra{i} \hat{E}^{-} \ket{f} \bra{f} \hat{E}^{+} \ket{i} = \bra{i} \hat{E}^-(\vec{r},t) \hat{E}^+ (\vec{r},t) \ket{i}.
+\end{equation}
+Here the $\sum_{f} \ket{f} \bra{f} = 1$ relation was used.
+
+Shall us define the first-order correlation function
+\begin{equation}
+	g^{(1)} (\vec{r}_1,t_1; \vec{r}_2, t_2) \sim \bra{i} \hat{E}^-(\vec{r}_1, t_1) \hat{E}^+ (\vec{r}_2, t_2) \ket{i} = \langle \hat{E}^-(\vec{r}_1, t_1) \hat{E}^+ (\vec{r}_2, t_2) \rangle.
+\end{equation}
+It is useful for quantifying the coherence between two electric fields, as measured in a Michelson or other linear optical interferometer. Here we used the average notation as 
+\begin{equation}
+	\langle \hat{A} \rangle \myeq \bra{i} \hat{A} \ket{i}.
+\end{equation}
+
+The detection probability of two photons is given by
+\begin{multline}
+	\omega_2 (\vec{r}_1, t_1; \vec{r}_2, t_2) = \sum_{f} \left| \bra{f} \hat{E}^+ (\vec{r}_1 ,t_1) \hat{E}^+ (\vec{r}_2 , t_2) \ket{i} \right|^2 = \\ = \bra{i} \hat{E}^- (\vec{r}_2 , t_2) \hat{E}^- (\vec{r}_1 , t_1) \hat{E}^+ (\vec{r}_1 , t_1) \hat{E}^+ (\vec{r}_2 , t_2) \ket{i}.
+\end{multline}
+The joint probability of photodetection is thus governed by the second-order correlation function:
+\begin{equation}
+	g^{(2)}(\vec{r}_1, t_1; \vec{r}_2, t_2) = \frac{\langle \hat{E}^-(\vec{r}_2, t_2) \hat{E}^-(\vec{r}_1, t_1) \hat{E}^+(\vec{r}_1, t_1) \hat{E}^+(\vec{r}_2, t_2)\rangle}{\langle \hat{E}^-(\vec{r}_2, t_2) \hat{E}^+(\vec{r}_2, t_2) \rangle \langle \hat{E}^-(\vec{r}_1, t_1) \hat{E}^+(\vec{r}_1, t_1) \rangle}.
+\end{equation}
+It refers to intensity (e.g. for currents). The exact expression for the first-order correlation function is the following:
+\begin{equation}
+	g^{(1)} (\vec{r}_1, t_1; \vec{r}_2, t_2) = \frac{\langle \hat{E}^-(\vec{r}_1, t_1) \hat{E}^+ (\vec{r}_2, t_2) \rangle}{\sqrt{\langle \hat{E}^-(\vec{r}_2, t_2) \hat{E}^+(\vec{r}_2, t_2) \rangle \langle \hat{E}^-(\vec{r}_1, t_1) \hat{E}^+(\vec{r}_1, t_1) \rangle}}.
+\end{equation}
+In fact it refers to interference in quantum mechanic.
+
+A particular case is often used, precisely a case $\vec{r}_1 = \vec{r}_2$ and $\tau = t_2 - t_1$. In such case notation is $g^{(2)} (\vec{r}_1, t_1; \vec{r}_2, t_2) \myeq g^{(2)} (\tau)$. So we have
+\begin{equation}
+	g^{(2)} (\tau) = \frac{\langle \hat{E}^-(\tau) \hat{E}^-(0) \hat{E}^+(0) \hat{E}^+(\tau)\rangle}{\langle \hat{E}^-(0) \hat{E}^+(0) \rangle^2},
+\end{equation}
+where was used $\langle \hat{E}^-(0) \hat{E}^+(0) \rangle = \langle \hat{E}^-(\tau) \hat{E}^+(\tau) \rangle$, $\forall \tau$ which means that the signal is homogeneous. For a case of only \textit{one mode field} we can write
+\begin{equation}
+	g^{(2)} (\tau) = \frac{\langle \hat{a}^{\dagger} (\tau) \hat{a}^{\dagger} (0) \hat{a}(0) \hat{a}(\tau) \rangle}{\langle \hat{a}^{\dagger} \hat{a} \rangle^2}.
+\end{equation}
+Important to notice that in numerator of fraction is \textit{normally ordered}.
+
+\begin{testexample}[The second-order correlation function for Fock states ($\ket{i} = \ket{n}$).]
+	%\textcolor{red}{(UNCOMMENT THIS LATER! (see source))}
+	\begin{equation}
+		g^{(2)} (0) = \frac{\bra{n} \hat{a}^{\dagger} \hat{a}^{\dagger} \hat{a} \hat{a} \ket{n}}{\bra{n}\hat{a}^{\dagger} \hat{a} \ket{n}} = \frac{n(n-1)}{n^2} = 1 - \frac{1}{n} < 1, \quad \forall n.
+	\end{equation}
+	This is a factor of a single-photon beam, e.g. $n=1 \to g^{(2)}(0)=0$. Exactly this effect was observed in a HBT experiment!
+\end{testexample}
+
+\begin{hw}[The second-order correlation function for coherent states.]
+	Compute $g^{(2)}(0)$ for case $\ket{i} = \ket{\alpha}$.
+\end{hw}

@@ -35,11 +35,12 @@
 \newcommand\myeq{\mathrel{\overset{\makebox[0pt]{\mbox{\normalfont\tiny\sffamily def}}}{=}}}
 
 %% for examples env
-\begin{comment}
+%\begin{comment}
 \usepackage[most]{tcolorbox}
 \newcounter{testexample}
 \usepackage{xparse}
 \usepackage{lipsum}
+%for examples
 \def\exampletext{Example}
 \NewDocumentEnvironment{testexample}{ O{} }
 {
@@ -69,7 +70,35 @@
 	\begin{testexamplebox}}
 {\end{testexamplebox}\endlist}
 
-\end{comment}
+\def\homeworktext{Homework}
+\NewDocumentEnvironment{hw}{ O{} }
+{
+	\colorlet{colexam}{green!55!black} % Global example color
+	\newtcolorbox[use counter=testexample]{testexamplebox}{%
+		% Example Frame Start
+		empty,% Empty previously set parameters
+		title={\homeworktext: #1},% use \thetcbcounter to access the testexample counter text
+		% Attaching a box requires an overlay
+		attach boxed title to top left,
+		% Ensures proper line breaking in longer titles
+		minipage boxed title,
+		% (boxed title style requires an overlay)
+		boxed title style={empty,size=minimal,toprule=0pt,top=4pt,left=3mm,overlay={}},
+		coltitle=colexam,fonttitle=\bfseries,
+		before=\par\medskip\noindent,parbox=false,boxsep=0pt,left=3mm,right=0mm,top=2pt,breakable,pad at break=0mm,
+		before upper=\csname @totalleftmargin\endcsname0pt, % Use instead of parbox=true. This ensures parskip is inherited by box.
+		% Handles box when it exists on one page only
+		overlay unbroken={\draw[colexam,line width=.5pt] ([xshift=-0pt]title.north west) -- ([xshift=-0pt]frame.south west); },
+		% Handles multipage box: first page
+		overlay first={\draw[colexam,line width=.5pt] ([xshift=-0pt]title.north west) -- ([xshift=-0pt]frame.south west); },
+		% Handles multipage box: middle page
+		overlay middle={\draw[colexam,line width=.5pt] ([xshift=-0pt]frame.north west) -- ([xshift=-0pt]frame.south west); },
+		% Handles multipage box: last page
+		overlay last={\draw[colexam,line width=.5pt] ([xshift=-0pt]frame.north west) -- ([xshift=-0pt]frame.south west); },%
+	}
+\begin{testexamplebox}}
+{\end{testexamplebox}\endlist}
+%\end{comment}
 
 \usepackage{bbold}
 \usepackage{mathtools}
@@ -94,5 +123,9 @@
 	\include{L2}
 
 	\include{L3}
+	
+	\include{L4}
+	
+	\include{L5}
 	
 \end{document} 
