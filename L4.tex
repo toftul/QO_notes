@@ -1,4 +1,5 @@
 \section{Atom-field interaction --- semiclassical theory}
+\label{sec:atom-field_interaction}
 
 A word \textit{semiclassical} in this context means the following: let us consider a classical electromagnetic field and a <<quantum>> atom. For simplicity let us take two-level system (fig. \ref{fig:2lvl}). Then throw light on this system.
 \begin{figure}[h!]
@@ -110,3 +111,90 @@ Beside $E_a - E_b = \hbar \omega_0$ --- the transition frequency. Let incident f
 		C_b(0) = 1.
 	\end{matrix}
 \end{equation}
+So solution is
+\begin{equation}
+	\left( E_a C_a \ket{a} + E_b C_b \ket{b} \right) - \vec{d} \cdot \bm{\varepsilon} C_a \ket{a} - \vec{d} \cdot \bm{\varepsilon} C_b \ket{b} = i \hbar \dot{C}_a \ket{a} + i \hbar \dot{C}_b \ket{b}.
+	\label{eq:tmp150}
+\end{equation}
+Projections to $\ket{a}$ and $\ket{b}$ gives us 
+\begin{equation}
+\begin{cases}
+	\begin{matrix}
+	\bra{a} \cdot \eqref{eq:tmp150}: &\qquad&
+	E_a C_a - C_a \bra{a} \vec{d} \cdot \bm{\varepsilon} \ket{a} - C_b \bra{a} \vec{d} \cdot \bm{\varepsilon} \ket{b} = i \hbar \dot{C}_a, \\  \\
+	\bra{b} \cdot \eqref{eq:tmp150}: &\qquad& 
+	E_b C_b - C_b \bra{b} \vec{d} \cdot \bm{\varepsilon} \ket{b} - C_a \bra{b} \vec{d} \cdot \bm{\varepsilon} \ket{a} = i \hbar \dot{C}_b.
+	\end{matrix}
+\end{cases}
+\label{eq:tmp151}
+\end{equation}
+
+Let us assume that field $\bm{\varepsilon}$ is not changing in space, so we can write
+\begin{equation}
+	\bra{a} \vec{d} \cdot \bm{\varepsilon} \ket{a} = \bra{a} \vec{d} \ket{a} \cdot \bm{\varepsilon}, \qquad 
+	\bra{a} \vec{d} \cdot \bm{\varepsilon} \ket{b} = \bra{a} \vec{d} \ket{b} \cdot \bm{\varepsilon}.
+\end{equation}
+Dipole matrix elements are
+\begin{equation}
+	\vec{d}_{\alpha \beta} \myeq \bra{\alpha} \vec{d} \ket{\beta} = \int dV \psi_{\alpha}^* (\vec{r}) e \vec{r} \psi_{\beta} (\vec{r}).
+\end{equation}
+By symmetry considerations it follows  $\left| \vec{d}_{\alpha \alpha} \right| \ll \left| \vec{d}_{\alpha \beta} \right|_{\alpha \neq \beta}$, since usually neighboring states have opposite parity \textcolor{red}{(но это не точно)} and $e \vec{r}$ --- an odd function. Using such approximation (formally just $\vec{d}_{aa}, \vec{d}_{bb} \to 0$ in \eqref{eq:tmp151}) we can write
+\begin{equation}
+	\begin{cases}
+		i \hbar \dot{C}_a = E_a C_a - C_b \vec{d}_{ab} \cdot \bm{\varepsilon}, \\
+		i \hbar \dot{C}_b = E_b C_b - C_a \vec{d}_{ba} \cdot \bm{\varepsilon}.
+	\end{cases} 
+	\qquad \quad \vec{d}_{ba} = \vec{d}_{ab}^*
+\end{equation}
+Here we can see that if we <<turn off>> the interaction ($\vec{d}_{\alpha \beta} = 0$) states $\ket{a}$ and $\ket{b}$ will be unloosened. If we turn the interaction on transitions will take place. 
+
+To get rid off phase factor we introduce
+\begin{equation}
+	\widetilde{C}_a (t) \myeq C_a(t) e^{\frac{i}{\hbar}E_a t}, \qquad \widetilde{C}_b (t) \myeq C_b(t) e^{\frac{i}{\hbar}E_a t}.
+\end{equation}
+After that we have
+\begin{equation}
+	\begin{cases}
+		\dot{\widetilde{C}}_a = \frac{i}{\hbar}\vec{d}_{ab} \cdot \bm{\varepsilon} e^{i \omega_0 t} \widetilde{C}_b(t), \\
+		\dot{\widetilde{C}}_b = \frac{i}{\hbar}\vec{d}^*_{ab} \cdot \bm{\varepsilon} e^{-i \omega_0 t} \widetilde{C}_a(t).
+	\end{cases} 
+\end{equation}
+
+Now we need to apply \textit{rotating wave approximation} (RWA). To understand what is it lets look at 
+\begin{equation}
+	\bm{\varepsilon}(t) e^{i \omega_0 t} = \bm{\varepsilon}_0 \frac{e^{i \omega t} + e^{- i \omega t}}{2} e^{i \omega_0 t}= \frac{1}{2} \bm{\varepsilon}_0 \left( \underbrace{e^{i(\omega_0 + \omega) t}}_{\text{fast osc.}} + e^{i(\omega_0 - \omega) t} \right).
+\end{equation}
+Fast oscillating term will lead to a small contribution, so it may be neglected. Leaving only $\sim e^{i (\omega_0 - \omega)t}$ term is called RWA. It's convenient to denote $\Delta \myeq \omega_0 - \omega$, so
+\begin{equation}
+	\begin{cases}
+		\dot{\widetilde{C}}_a = \frac{i}{2\hbar}\vec{d}_{ab} \cdot \bm{\varepsilon}_0 e^{i \Delta t} \widetilde{C}_b(t), \\
+		\dot{\widetilde{C}}_b = \frac{i}{2\hbar}\vec{d}^*_{ab} \cdot \bm{\varepsilon}_0 e^{-i \Delta t} \widetilde{C}_a(t).
+	\end{cases} 
+\end{equation}
+Agreed notation is the following
+\begin{equation}
+	\boxed{\Omega_R \myeq \frac{\left|\vec{d}_{ab} \cdot \bm{\varepsilon}_0\right|}{\hbar}.}
+\end{equation}
+This is \textit{Rabi frequency}.
+
+To simplify the understanding of our result let us put $\Delta =0$ (resonant excitation) and a specific phase of incident light, so our system will be
+\begin{equation}
+	\begin{cases}
+		\dot{\widetilde{C}}_a = i \frac{\Omega_R}{2} \widetilde{C}_b, \\
+		\dot{\widetilde{C}}_b = i \frac{\Omega_R}{2} \widetilde{C}_a.
+	\end{cases}
+	\label{eq:rabi_system}
+\end{equation}
+The solution is easy to obtain: $\widetilde{C}_b = \cos \left( \frac{\Omega_R t}{2} \right)$. Only $\left| C_a\right|^2$ and $\left| C_b \right|^2$ have the real physical meaning --- it's the probability of occupation on different states.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.65\linewidth]{fig/L4/rabi_osc}
+	\caption{Rabi oscillations for two-level system}
+	\label{fig:rabiosc}
+\end{figure}
+
+Here is a short summary:
+\begin{enumerate}
+	\item If $\vec{d} \perp \bm{\varepsilon}$ then $\Omega_R = 0$.
+	\item To increase Rabi frequency one need to increase the amplitude of incident wave $\left| \bm{\varepsilon} \right|$. 
+\end{enumerate}
