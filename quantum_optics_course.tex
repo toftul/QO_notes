@@ -1,9 +1,10 @@
 \documentclass[12pt,a4paper,titlepage]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
+\usepackage[russian,english]{babel}
 \usepackage[usenames]{color} %!!
 \usepackage{colortbl} %!
 \usepackage{amsmath}
+\numberwithin{equation}{section}
 \usepackage{bm}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -14,6 +15,7 @@
 \usepackage[ddmmyyyy]{datetime}
 \usepackage{epigraph}
 \usepackage{graphicx}
+\usepackage{cancel}
 \graphicspath{{fig/}}
 \usepackage[subnum]{cases}
 \usepackage{accents}
@@ -28,6 +30,7 @@
 \newcommand{\vecmult}[2]{\left[ \vec{{#1}} \times \vec{{#2}}   \right]}
 \newcommand{\abs}[1]{\left| #1  \right|}
 \newcommand{\half}{\frac{1}{2}}
+\newcommand{\kv}{\vec{k}}
 \renewcommand{\vec}[1]{\mathbf{#1}}
 \renewcommand{\Re}{\operatorname{Re}}
 \renewcommand{\Im}{\operatorname{Im}}
@@ -111,7 +114,6 @@
 \date{ }
 \author{Petrov M. I.}
 \title{\textbf{Quantum Optics} \\ lecture course}
-
 
 \begin{document}
 
