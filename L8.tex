@@ -108,11 +108,17 @@ where $(\nabla \otimes \nabla)_{\alpha \beta} = \partial_{\alpha} \partial_{\bet
 	\end{equation}
 	Substitution to \eqref{eq:E_from_G} gives
 	\begin{equation}
-		\vec{E}(\vec{r}) = i \frac{4\pi}{c}k (-i\omega) \int d^3 r' \hat{\vec{G}}(\vec{r}, \vec{r}') \vec{d}_0 \delta(\vec{r} - \vec{r}_0) = 4\pi k^2 \hat{\vec{G}}(\vec{r}, \vec{r}_0) \vec{d}_0
+		\vec{E}(\vec{r}) = i \frac{1}{c \varepsilon_0}k (-i\omega) \int d^3 r' \hat{\vec{G}}(\vec{r}, \vec{r}') \vec{d}_0 \delta(\vec{r} - \vec{r}_0) = \frac{k^2}{\varepsilon_0} \hat{\vec{G}}(\vec{r}, \vec{r}_0) \vec{d}_0
 	\end{equation}
 	or
 	\begin{equation}
-		E_{\alpha}(\vec{r}) = 4\pi k^2  \hat{G}_{\alpha \beta}(\vec{r}, \vec{r}_0) d_{0 \beta} \quad \text{(sgs)}.
+		E_{\alpha}(\vec{r}) = \begin{pmatrix}
+		4\pi  \\ \\
+		\dfrac{1}{\varepsilon_0}
+		\end{pmatrix} k^2  \hat{G}_{\alpha \beta}(\vec{r}, \vec{r}_0) d_{0 \beta} \qquad \text{units: }\begin{pmatrix}
+		\text{sgs}  \\ \\
+		\text{SI}
+		\end{pmatrix}.
 	\end{equation}
 	\textit{Remark:} interesting to notice that is $\vec{d}_0 = (d_0,0,0)$ then the first column of $\hat{\vec{G}}$ shows a field which induces a dipole $Ox$-directed.
 \end{testexample}
@@ -131,3 +137,5 @@ where
 		(\text{electrodynamics})& \hat{\vec{G}}_{FF} &=& \frac{e^{ikR}}{4\pi R}  \left( \hat{\vec{I}} - \frac{\vec{R}\otimes\vec{R}}{R^2} \right), & kR \gg 1
 	\end{matrix}
 \end{equation*}
+
+\subsection{Spontaneous relaxation and local density-of-state}
