@@ -37,6 +37,8 @@
 \select@language {russian}
 \select@language {english}
 \contentsline {section}{\numberline {8}Dipole radiation. Dyadic Green's function. The Purcell effect: classical approach}{44}{section.8}
+\select@language {russian}
+\select@language {english}
 \contentsline {subsection}{\numberline {8.1}Dipole radiation and dyadic Green's function}{44}{subsection.8.1}
 \contentsline {subsubsection}{\numberline {8.1.1}Green's function. General information}{44}{subsubsection.8.1.1}
 \contentsline {subsubsection}{\numberline {8.1.2}Derivation of the Green's function for Maxwell equations}{45}{subsubsection.8.1.2}

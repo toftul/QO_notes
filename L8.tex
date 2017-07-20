@@ -1,5 +1,9 @@
 \section{Dipole radiation. Dyadic Green's function. The Purcell effect: classical approach}
 
+\begin{otherlanguage}{russian}	
+	\textcolor{red}{На лекциях часть с уравнениями Максвелла была прочитана в СГС, но считаю, что лучше написать это в СИ, так как большинство статей по этой теме и тот же Новотный --- в СИ.}
+\end{otherlanguage}
+
 \subsection{Dipole radiation and dyadic Green's function}
 
 Consider a point dipole $\vec{d}_0$ which is located in point $\vec{r}_0$. The electric current is given by
@@ -8,24 +12,24 @@ Consider a point dipole $\vec{d}_0$ which is located in point $\vec{r}_0$. The e
 	\label{eq:dipole_current}
 \end{equation}
 
-Let us state a problem to find the dipole field in space. If one wants something which is connected with electromagnetism then he should write Maxwell equations. So we do
+Let us state a problem to find the dipole field in space. If one wants something which is connected with electromagnetism then he should write Maxwell equations. So we do (in SI units)
 \begin{numcases}{}
-	\Rot \vec{E} = - \frac{1}{c} \parder{\vec{H}}{t},
+	\Rot \vec{E} = -  \parder{\vec{B}}{t},
 	\label{eq:M1_j} \\
-	\Rot \vec{H} = \frac{1}{c} \parder{\vec{E}}{t} + \frac{4 \pi}{c} \vec{j},
+	\Rot \vec{H} = \parder{\vec{D}}{t} + \vec{j},
 	\label{eq:M2_j} \\
-	\Div \vec{D} = 4 \pi \rho,
+	\Div \vec{D} = \rho,
 	\label{eq:M3_j} \\
 	\Div \vec{B} = 0.
 	\label{eq:M4_j}
 \end{numcases}
-After applying the Fourier transform over time (in fact just $\partial_t \to - i \omega$) we obtain
+After applying the Fourier transform over time (in fact just $\partial_t \to - i \omega$) and using $\vec{D} = \varepsilon \varepsilon_0 \vec{E}$ and $\vec{B} = \mu \mu_0 \vec{H}$  we obtain
 \begin{equation}
-	\Rot \Rot \vec{E} =  \frac{\omega^2}{c^2} \vec{E} + \frac{4 \pi}{c^2} \omega^2 \vec{d}_0 \delta(\vec{r} - \vec{r}_0),
+	\Rot \Rot \vec{E}  - \mu \mu_0 \varepsilon \varepsilon_0 \omega^2 \vec{E} =  i \mu \mu_0 \omega \vec{j}
 \end{equation}
-introducing $\frac{\omega^2}{c^2} = k^2$ we get
+introducing $k = \dfrac{\omega}{c} \sqrt{\varepsilon \mu}$ we get
 \begin{equation}
-	\Rot \Rot \vec{E} - k^2 \vec{E} = 4 \pi k^2 \vec{d}_0 \delta(\vec{r} - \vec{r}_0).
+	\Rot \Rot \vec{E} - k^2 \vec{E} = \frac{k^2}{\varepsilon \varepsilon_0} \vec{d}_0 \delta(\vec{r} - \vec{r}_0).
 	\label{eq:grrr}
 \end{equation}
 Here we have an inhomogeneous differential equation with a $\delta$--function on the rhs of the equation. Solution of such equation is a Green's function $\hat{\vec{G}}(\vec{r}, \vec{r}_0)$. As \eqref{eq:grrr} is in fact three equation then Green's function for a electromagnetic fields is a tensor or a so--called \textit{dyadic Green's function}. This fact is represent by writing a "hat" over $G$.
@@ -65,7 +69,7 @@ As we understand how it is convenient and important, let us find the explicit fo
 \end{equation}
 If we know $\hat{\vec{G}}$, then we know $\vec{E}$ from \eqref{eq:E_from_G}. On the other hand we know that
 \begin{equation}
-	\vec{E} = - \nabla \varphi - \frac{1}{c} \parder{\vec{A}}{t}.
+	\vec{E} = - \nabla \varphi - \parder{\vec{A}}{t}.
 	\label{eq:elll}
 \end{equation}
 If we use electromagnetic potential $\vec{A}$ then we can choose any gauge for our convenience. Let us take the Lorenz gauge
@@ -74,22 +78,21 @@ If we use electromagnetic potential $\vec{A}$ then we can choose any gauge for o
 \end{equation}
 It means that $\varphi$ and $\vec{A}$ obeys
 \begin{numcases}{\label{eq:gelm}}
-	\Delta \vec{A} + k^2 \vec{A} = - \frac{4 \pi}{c} \vec{j}, \\
-	\Delta \varphi + k^2 \varphi = - 4\pi \rho.	
+	\Delta \vec{A} + k^2 \vec{A} = - \mu \mu_0 \vec{j}, \\
+	\Delta \varphi + k^2 \varphi = - \frac{\rho}{\varepsilon \varepsilon_0}.	
 \end{numcases}
 As we can see \eqref{eq:gelm} ---inhomogeneous Helmholtz equations. The Green's function is known (careful derivation is too long and may take away from the main point):
 \begin{equation}
 	G_0(\vec{r}, \vec{r}_0) = \frac{e^{ikR}}{4\pi R}, \qquad R = \left| \vec{r} - \vec{r}_0 \right|.
 \end{equation}
 It means that we can write the solution of \eqref{eq:gelm} as
-\begin{numcases}{}
-	\vec{A}(\vec{r}) = \frac{4 \pi}{c} \int d^3 r' G_0(\vec{r}, \vec{r}') \hat{\vec{I}} \vec{j}(\vec{r}'), \\
-	\varphi(\vec{r}) = 4\pi \int d^3r' G_0(\vec{r}, \vec{r}') \rho(\vec{r}'),
-	\label{eq:solll}
+\begin{numcases}{\label{eq:solll}}
+	\vec{A}(\vec{r}) = \mu \mu_0 \int d^3 r' G_0(\vec{r}, \vec{r}') \hat{\vec{I}} \vec{j}(\vec{r}'), \\
+	\varphi(\vec{r}) = \frac{1}{\varepsilon \varepsilon_0} \int d^3r' G_0(\vec{r}, \vec{r}') \rho(\vec{r}'),
 \end{numcases}
 where $\hat{\vec{I}}_{ik} = \delta_{ik}$ --- a unit tensor. To get the final answer for $\hat{\vec{G}}$ we substitute \eqref{eq:solll} in \eqref{eq:elll} and compare the result with \eqref{eq:E_from_G}. Substitution gives
 \begin{equation}
-	\vec{E}(\vec{r}) = i \frac{4 \pi}{c} k \int d^3 r' \underbrace{\left[ G_0(\vec{r}, \vec{r}') \hat{\vec{I}} + \frac{1}{k^2} \nabla \Div G_0(\vec{r}, \vec{r}') \hat{\vec{I}} \right]}_{\hookrightarrow \myeq \hat{\vec{G}}(\vec{r}, \vec{r}')} \vec{j}(\vec{r}')
+	\vec{E}(\vec{r}) = i \omega \mu \mu_0 \int d^3 r' \underbrace{\left[ G_0(\vec{r}, \vec{r}') \hat{\vec{I}} + \frac{1}{k^2} \nabla \Div G_0(\vec{r}, \vec{r}') \hat{\vec{I}} \right]}_{\hookrightarrow \myeq \hat{\vec{G}}(\vec{r}, \vec{r}')} \vec{j}(\vec{r}')
 \end{equation}
 or
 \begin{equation}
