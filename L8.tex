@@ -127,7 +127,12 @@ where $(\nabla \otimes \nabla)_{\alpha \beta} = \partial_{\alpha} \partial_{\bet
 
 Sometimes it is convenient to write  \eqref{eq:ggGGGgg} in different form:
 \begin{equation}
-	\hat{\vec{G}}(\vec{r}, \vec{r}_0) \overset{\vec{R} = \vec{r} - \vec{r}_0}{=} \hat{\vec{G}}(\vec{R}) = \hat{\vec{G}}_{NF} + \hat{\vec{G}}_{IF} + \hat{\vec{G}}_{FF},
+	\hat{\vec{G}} (\vec{r}, \vec{r}_0) \overset{\vec{R} = \vec{r} - \vec{r}_0}{=} \hat{\vec{G}}(\vec{R}) = \frac{e^{ikR}}{4\pi R} \left[  \left( 1 + \frac{ikR - 1}{k^2R^2} \right) \hat{\vec{I}} + \frac{3 - 3ikR - k^2R^2}{k^2R^2} \frac{\vec{R}\otimes\vec{R}}{R^2} \right],
+\end{equation}
+which can be divided for summands with different powers of $kR$ as
+\begin{equation}
+	\hat{\vec{G}}(\vec{R}) = \hat{\vec{G}}_{NF} + \hat{\vec{G}}_{IF} + \hat{\vec{G}}_{FF},
+	\label{eq:GGG}
 \end{equation}
 where
 \begin{equation*}
@@ -137,8 +142,15 @@ where
 		(\text{electrodynamics})& \hat{\vec{G}}_{FF} &=& \frac{e^{ikR}}{4\pi R}  \left( \hat{\vec{I}} - \frac{\vec{R}\otimes\vec{R}}{R^2} \right), & kR \gg 1
 	\end{matrix}
 \end{equation*}
+The simplified radiation spectrum and its connection with \eqref{eq:GGG} is shown in fig. \ref{fig:radiation1}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\linewidth]{fig/L8/radiation_1}
+	\caption{Intuitive picture of positioning of maximum radiation of a dipole}
+	\label{fig:radiation1}
+\end{figure}
+
 
 \subsection{Spontaneous relaxation and local density-of-state}
 
-Words to make a test commit. 
-And another line to check!
