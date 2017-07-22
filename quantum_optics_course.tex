@@ -49,7 +49,7 @@
 \def\exampletext{Example}
 \NewDocumentEnvironment{testexample}{ O{} }
 {
-	\colorlet{colexam}{red!55!black} % Global example color
+	\colorlet{colexam}{green!55!black} % Global example color
 	\newtcolorbox[use counter=testexample]{testexamplebox}{%
 		% Example Frame Start
 		empty,% Empty previously set parameters
@@ -78,7 +78,7 @@
 \def\homeworktext{Homework}
 \NewDocumentEnvironment{hw}{ O{} }
 {
-	\colorlet{colexam}{green!55!black} % Global example color
+	\colorlet{colexam}{red!55!black} % Global example color
 	\newtcolorbox[use counter=testexample]{testexamplebox}{%
 		% Example Frame Start
 		empty,% Empty previously set parameters
@@ -119,8 +119,13 @@
 
 	\maketitle
 	\newpage
+	
 	\renewcommand\contentsname{Contents} 
 	\tableofcontents
+\newpage
+	\begin{otherlanguage}{russian}	
+		\textcolor{red}{Надо бы добавить список рекомендованной литературы.}
+	\end{otherlanguage}
 
 	\include{L1}
 	
@@ -136,7 +141,7 @@
 	
 	\include{L7}  % Scully 6.3
 	
-	\include{L8}  % Novotny 2.10
+	\include{L8}  % Novotny 2.10 && 8.4.1
 	
 	\include{L9}
 	
