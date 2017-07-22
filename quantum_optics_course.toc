@@ -1,46 +1,61 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}Secondary quantization}{2}{section.1}
 \select@language {russian}
 \select@language {english}
-\contentsline {subsection}{\numberline {1.1}Introduction}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}System for $\mathbf {A}$}{2}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Formulation of the problem}{3}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Field quantization}{5}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}Ladder operators. Fock state. Second quantization}{7}{subsection.1.5}
-\contentsline {subsection}{\numberline {1.6}Fields' fluctuation}{7}{subsection.1.6}
-\contentsline {subsection}{\numberline {1.7}Casimir effect (NOT FINISHED)}{8}{subsection.1.7}
-\contentsline {section}{\numberline {2}Coherent states}{9}{section.2}
+\contentsline {section}{\numberline {1}Secondary quantization}{3}{section.1}
 \select@language {russian}
 \select@language {english}
-\contentsline {subsection}{\numberline {2.1}Eigenfunction}{9}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Orthogonality}{10}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Fluctuations}{11}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Squeezed states or getting the maximum accuracy!}{14}{subsection.2.4}
-\contentsline {section}{\numberline {3}The coherence of light}{16}{section.3}
+\contentsline {subsection}{\numberline {1.1}Introduction}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}System for $\mathbf {A}$}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Formulation of the problem}{4}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Field quantization}{6}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Ladder operators. Fock state. Second quantization}{8}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Fields' fluctuation}{8}{subsection.1.6}
+\contentsline {subsection}{\numberline {1.7}Casimir effect (NOT FINISHED)}{9}{subsection.1.7}
+\contentsline {section}{\numberline {2}Coherent states}{10}{section.2}
 \select@language {russian}
 \select@language {english}
-\contentsline {subsection}{\numberline {3.1}Bunching and antibunching of photons}{16}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Quantum theory of photodetection}{19}{subsection.3.2}
-\contentsline {section}{\numberline {4}Atom-field interaction. Semiclassical theory}{22}{section.4}
-\contentsline {section}{\numberline {5}Density matrix of two energy level system}{26}{section.5}
-\contentsline {subsection}{\numberline {5.1}Density matrix of mixed state}{28}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Subsystem density matrix}{29}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Density matrix for two-level system}{29}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Bloch sphere}{30}{subsection.5.4}
+\contentsline {subsection}{\numberline {2.1}Eigenfunction}{10}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Orthogonality}{11}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Fluctuations}{12}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Squeezed states or getting the maximum accuracy!}{15}{subsection.2.4}
+\contentsline {section}{\numberline {3}The coherence of light}{17}{section.3}
 \select@language {russian}
 \select@language {english}
-\contentsline {section}{\numberline {6}Atom--field interaction. Quantum approach}{33}{section.6}
-\contentsline {subsection}{\numberline {6.1}Jaynes\IeC {\textendash }Cummings model (RWA)}{33}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Collapse and revival}{37}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Energy spectrum. Dispersion relation}{37}{subsection.6.3}
-\contentsline {section}{\numberline {7}Spontaneous relaxation. Weisskopf-Wigner theory}{41}{section.7}
+\contentsline {subsection}{\numberline {3.1}Bunching and antibunching of photons}{17}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Quantum theory of photodetection}{20}{subsection.3.2}
+\contentsline {section}{\numberline {4}Atom-field interaction. Semiclassical theory}{23}{section.4}
+\contentsline {section}{\numberline {5}Density matrix of two energy level system}{27}{section.5}
+\contentsline {subsection}{\numberline {5.1}Density matrix of mixed state}{29}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Subsystem density matrix}{30}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Density matrix for two-level system}{30}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Bloch sphere}{31}{subsection.5.4}
 \select@language {russian}
 \select@language {english}
-\contentsline {section}{\numberline {8}Dipole radiation. Dyadic Green's function. The Purcell effect: classical approach}{44}{section.8}
+\contentsline {section}{\numberline {6}Atom--field interaction. Quantum approach}{34}{section.6}
+\contentsline {subsection}{\numberline {6.1}Jaynes\IeC {\textendash }Cummings model (RWA)}{34}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Collapse and revival}{38}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Energy spectrum. Dispersion relation}{38}{subsection.6.3}
+\contentsline {section}{\numberline {7}Spontaneous relaxation. Weisskopf-Wigner theory}{42}{section.7}
 \select@language {russian}
 \select@language {english}
-\contentsline {subsection}{\numberline {8.1}Dipole radiation and dyadic Green's function}{44}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Green's function. General information}{44}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Derivation of the Green's function for Maxwell equations}{45}{subsubsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.3}Near-, intermediate- and far-field parts of Green's function}{46}{subsubsection.8.1.3}
-\contentsline {subsection}{\numberline {8.2}Spontaneous relaxation and local density-of-state}{46}{subsection.8.2}
+\contentsline {section}{\numberline {8}Dipole radiation. Dyadic Green's function. The Purcell effect: classical approach}{45}{section.8}
+\select@language {russian}
+\select@language {english}
+\contentsline {subsection}{\numberline {8.1}Dipole radiation and dyadic Green's function}{45}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Green's function. General information}{45}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Derivation of the Green's function for Maxwell equations}{46}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}Near-, intermediate- and far-field parts of Green's function}{47}{subsubsection.8.1.3}
+\contentsline {subsection}{\numberline {8.2}Spontaneous relaxation and local density-of-state (IN A MIXED UNITS)}{48}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}An expression for spontaneous decay}{48}{subsubsection.8.2.1}
+\select@language {russian}
+\select@language {english}
+\contentsline {subsubsection}{\numberline {8.2.2}Spontaneous decay and Green's dyadics}{49}{subsubsection.8.2.2}
+\select@language {russian}
+\select@language {english}
+\select@language {russian}
+\select@language {english}
+\select@language {russian}
+\select@language {english}
+\contentsline {subsection}{\numberline {8.3}The Purcell factor}{50}{subsection.8.3}
+\select@language {russian}
+\select@language {english}
