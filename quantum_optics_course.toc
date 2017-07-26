@@ -59,3 +59,5 @@
 \contentsline {subsection}{\numberline {8.3}The Purcell factor}{50}{subsection.8.3}
 \select@language {russian}
 \select@language {english}
+\contentsline {section}{\numberline {9}Theory of relaxation of electromagnetic filed. Heisenberg--Langevin method}{51}{section.9}
+\contentsline {section}{\numberline {10}Atom in a cavity with losses}{54}{section.10}
