@@ -1,6 +1,5 @@
 \select@language {english}
-\select@language {russian}
-\select@language {english}
+\contentsline {section}{Recommended literature}{3}{section*.2}
 \contentsline {section}{\numberline {1}Secondary quantization}{4}{section.1}
 \select@language {russian}
 \select@language {english}
@@ -66,4 +65,6 @@
 \contentsline {subsection}{\numberline {9.4}Equation of motion for the field correlation functions. Wiener--Khintchine theorem}{55}{subsection.9.4}
 \select@language {russian}
 \select@language {english}
-\contentsline {section}{\numberline {10}Atom in a cavity with losses}{57}{section.10}
+\contentsline {section}{\numberline {10}Atom in a damped cavity}{57}{section.10}
+\contentsline {subsection}{\numberline {10.1}The Purcell factor for a closed cavity}{57}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Rigorous derivation of the atomic decay}{58}{subsection.10.2}
