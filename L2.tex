@@ -6,9 +6,9 @@
 
 \subsection{Eigenfunction}
 
-Let us consider {\textcolor{red}{ singlemode field }}.
+Let us consider singlemode field.
 %only one emission mode
- We will be looking for those photons' states which allow us to get more {\textcolor{red} {classical}} world outlook. In particular we want $\hat{\vec{E}}$ be measurable. So, at first, we need to find eigenfunction of annihilation operator $\hat{a}$.
+We will be looking for those photons' states which allow us to get more classical world outlook. In particular we want $\hat{\vec{E}}$ be measurable. So, at first, we need to find eigenfunction of annihilation operator $\hat{a}$.
 
 The first naive idea that may come to mind is to check Fock states. Let's look closer at matrix elements
 \begin{equation}
@@ -21,7 +21,7 @@ The first naive idea that may come to mind is to check Fock states. Let's look c
 		\vdots & \vdots & \vdots & \vdots & \vdots & \ddots\\
 	\end{pmatrix}.
 \end{equation}
-Now it's clear that {\textcolor{red}{ $\ket{n}$ }}is not a eigenfunction because there {\textcolor{red} {are no elements }}on the main diagonal.
+Now it's clear that $\ket{n}$ is not a eigenfunction because there are no elements on the main diagonal.
 
 The ordinary procedure to find eigenfunction is the following. $\ket{\alpha}$ should satisfy
 \begin{equation}
@@ -30,11 +30,11 @@ The ordinary procedure to find eigenfunction is the following. $\ket{\alpha}$ sh
 where $\alpha$ --- eigenvalue.
 Fock states form full basis, so we can write
 \begin{equation}
-	\ket{\alpha} = \sum_{n={\textcolor{red} 0}}^{\infty} c_n \ket{n},
+	\ket{\alpha} = \sum_{n=0}^{\infty} c_n \ket{n},
 \end{equation}
 then
 \begin{equation}
-	\hat{a} \ket{\alpha} = \sum_{n={\textcolor{red} 0}}^{\infty} c_n \hat{a} \ket{n} = \sum_{n={\textcolor{red} 0}}^{\infty} c_n \sqrt{n} \ket{n-1} = \sum_{n=0}^{\infty} \sqrt{n+1} \ket{n} = \alpha \sum_{n={\textcolor{red} 0}}^{\infty} c_n \ket{n},
+	\hat{a} \ket{\alpha} = \sum_{n=0}^{\infty} c_n \hat{a} \ket{n} = \sum_{n=0}^{\infty} c_n \sqrt{n} \ket{n-1} = \sum_{n=0}^{\infty} \sqrt{n+1} \ket{n} = \alpha \sum_{n=0}^{\infty} c_n \ket{n},
 \end{equation}
 which gives the recurrent relation
 \begin{equation}
@@ -70,7 +70,7 @@ and finally
 	\end{equation}
 \end{testexample}
 
-Another important thing to calculate. Let us find the probability of $n$ {\textcolor{red}{photons}} be in $\ket{\alpha}$ state:
+Another important thing to calculate. Let us find the probability of $n$ photons be in $\ket{\alpha}$ state:
 \begin{equation}
 	p_n = \left| \braket{n}{\alpha} \right|^2 = e^{- \left|\alpha\right|^2} \frac{\left|\alpha\right|^{2n}}{n!}.
 \end{equation}
@@ -119,7 +119,7 @@ Let the reader check the fullness of coherent states. In other words needless to
 	\mathbb{1} = \frac{1}{\pi} \int \limits_{\mathbb{C}} d^2 \alpha \ket{\alpha} \bra{\alpha}.
 \end{equation}
 \textit{Hint:} for Fock states $\sum_{n=0}^{\infty} \ket{n} \bra{n} = 1$.\\
-\textit{Remark:} actually coherent states have the property of overfullness in the sense these states form a basis,  {\textcolor{red}{ but not orthogonal,  }} and one may be expressed with the others.
+\textit{Remark:} actually coherent states have the property of overfullness in the sense these states form a basis, but not orthogonal, and one may be expressed with the others.
 \end{hw}
 
 Consider the following singlemode field. So this
@@ -176,7 +176,7 @@ So we have
 \begin{equation}
 	\Delta q = \sqrt{\overline{q^2} - \overline{q}^2} = \sqrt{\frac{\hbar }{2\omega}} \sqrt{\left( 2n+1 \right)}.
 \end{equation}
-Now we can {\textcolor{red}{verb}} the uncertainty principle as following
+Now we can rewrite the uncertainty principle as following
 \begin{equation}
 	\Delta p \Delta q = \frac{\hbar}{2} \left(2n+1\right).
 \end{equation}
@@ -209,7 +209,7 @@ The uncertainty relation will be
 \begin{equation}
 	\boxed{\Delta p_{\alpha} \Delta q_{\alpha} = \frac{\hbar}{2} \quad \slashed{\sim} \quad  \alpha.}
 \end{equation}
-Here we see that $\Delta p_{\alpha} \Delta q_{\alpha}$ relation does not depend on $\alpha$! In fact we obtained a shifted {\textcolor{red}{ground}} Fock state (fig \ref{fig:shifted_Fock}).
+Here we see that $\Delta p_{\alpha} \Delta q_{\alpha}$ relation does not depend on $\alpha$! In fact we obtained a shifted ground Fock state (fig \ref{fig:shifted_Fock}).
 
 \begin{figure}
 	\centering

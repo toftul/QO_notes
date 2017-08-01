@@ -70,7 +70,7 @@
 	
 	\subsection{Formulation of the problem}
 	
-	Let us consider a cube with length of the edge $L$ (fig \ref{fig:cube}). Boundary conditions \textcolor{red}{should be zero or periodic} with the period $L$. System is considered to be conservative. The main idea is to solve system \eqref{eq:forA} and then just find the limit $L \to \infty$.
+	Let us consider a cube with length of the edge $L$ (fig \ref{fig:cube}). Boundary conditions should be zero or periodic with the period $L$. System is considered to be conservative. The main idea is to solve system \eqref{eq:forA} and then just find the limit $L \to \infty$.
 	
 	\begin{figure}
 		\centering
@@ -84,16 +84,16 @@
 		\vec{A}(\vec{r},t) = \sum_{\vec{k}} \vec{A}_{\vec{k}}(t) e^{i \vec{k} \vec{r}}, \qquad k_{\alpha} = \frac{2 \pi n_{\alpha}}{L}, \quad \alpha = x,y,z.
 	\end{equation}
 	%Where $\vec{n}$ --- a unit vector.
-\textcolor{red}{Where $n_{\alpha}$ --- is an integer number.}
+Where $n_{\alpha}$ --- is an integer number.
 As waves are plane then we should write
 	\begin{equation}
 		\vec{A}_{\vec{k}}(t) = \vec{c}_{\vec{k}} e^{-i \omega_{\vec{k}}t} + \vec{c}_{-\vec{k}}^* e^{i \omega_{\vec{k}}t},
 	\end{equation}
 	where $\omega_{\vec{k}} = c k = c\sqrt{k_x^2 + k_y^2 + k_z^2}$.
-Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
+Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, so
 \begin{equation}\label{kminsk}
-		\vec{A}_{\vec{k}}(t)=\vec{A}_{\vec{k}}^*(t) = \vec{c}_{-\vec{k}} e^{-i \omega_{\vec{k}}t}+ \vec{c}_{\vec{k}}^* e^{i \omega_{\vec{k}}t}=\vec{A}_{\vec{-k}}(t),
-	\end{equation} }.
+		\vec{A}_{\vec{k}}(t)=\vec{A}_{\vec{k}}^*(t) = \vec{c}_{-\vec{k}} e^{-i \omega_{\vec{k}}t}+ \vec{c}_{\vec{k}}^* e^{i \omega_{\vec{k}}t}=\vec{A}_{\vec{-k}}(t).
+	\end{equation}
 	The Lorentz gauge leads to the fact that \textit{waves are transverse}:
 	\begin{equation}
 		\Div \vec{A} = 0 \quad \to \quad \sum \vec{k} \vec{A}_{\vec{k}} e^{i \vec{k} \vec{r}} = 0 \quad \Longleftrightarrow \quad \boxed{\vec{A}_{\vec{k}}(t) \cdot \vec{k} = 0.}
@@ -109,7 +109,7 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	After that we can rewrite decomposition of $\vec{A}$ as
 	\begin{multline}
 		\vec{A} = \sum_{\vec{k},s} \tilde{A}_{\vec{k}} \left( c_{\vec{k}s} \vec{e}_{\vec{k}s} e^{-i \omega_{\vec{k}} t} + c^*_{-\vec{k}s} \vec{e}^*_{-\vec{k}s}  e^{i \omega_{\vec{k}} t} \right) \cdot e^{i \vec{k} \vec{r}} = \\
-		= \left/ \text{inverse 2nd sum \textcolor{red}{using \eqref{kminsk}}: } (-k) \to k \right/ =\sum_{\vec{k},s} \tilde{A}_{\vec{k}} \left( u_{\vec{k}s}(t) \vec{e}_{\vec{k}s} e^{i \vec{k} \vec{r}} + u^*_{\vec{k}s}(t) \vec{e}^*_{\vec{k}s}  e^{-i \vec{k} \vec{r}} \right),
+		= \left/ \text{inverse 2nd sum using \eqref{kminsk}: } (-k) \to k \right/ =\sum_{\vec{k},s} \tilde{A}_{\vec{k}} \left( u_{\vec{k}s}(t) \vec{e}_{\vec{k}s} e^{i \vec{k} \vec{r}} + u^*_{\vec{k}s}(t) \vec{e}^*_{\vec{k}s}  e^{-i \vec{k} \vec{r}} \right),
 	\end{multline}
 	where $u_{\vec{k}s}(t) = c_{\vec{k}s} e^{-i \omega_{\vec{k}} t}$. Now we can write fields
 	\begin{equation}
@@ -188,7 +188,7 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	\begin{eqnarray}
 		\hat{a}_{\vec{k}s}(t) &=& \dfrac{1}{\sqrt{2 \hbar \omega}} \left( \omega \hat{q}_{\vec{k}s} + i \hat{p}_{\vec{k}s} \right), %\\ \nonumber \\
 	\end{eqnarray}
-	{\textcolor{red}{ And his conjugated friend }}
+	And his conjugated friend
 	\begin{eqnarray}
 		\hat{a}^{\dagger}_{\vec{k}s}(t) &=& \dfrac{1}{\sqrt{2 \hbar \omega}} \left( \omega \hat{q}_{\vec{k}s} - i \hat{p}_{\vec{k}s} \right).
 	\end{eqnarray}
@@ -292,7 +292,7 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 	\begin{equation}
 		\bra{n} \hat{E}^2_x \ket{n} = \left| \varepsilon \right|^2 \bra{n} \hat{a} \hat{a}^{\dagger} \ket{n} + \left| \varepsilon \right|^2 \bra{n} \hat{a}^{\dagger} \hat{a} \ket{n} = 2 \left| \varepsilon \right|^2 \bra{n} \hat{n} + \frac{1}{2} \ket{n} = 2 \left| \varepsilon \right|^2 \left( n + \frac{1}{2} \right).
 	\end{equation}
-	Here we can make a few conclusions: \textbf{a)} the average field is zero {\textcolor{red}{ for any Fock state }}; \textbf{b)} in vacuum state ($n=0$) \textit{fluctuations are {\textcolor{red}{ minimal, but }} not zero}!
+	Here we can make a few conclusions: \textbf{a)} the average field is zero  for any Fock state; \textbf{b)} in vacuum state ($n=0$) \textit{fluctuations are minimal, but  not zero}!
 	
 	
 	A standard calculation procedure of fluctuation of any variable $X$ in $\ket{n}$ state is the following:
@@ -305,7 +305,7 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, \textcolor{red}{so
 		\sum_{\vec{k},s} \bra{n_{\vec{k}s}} \hat{\vec{E}}^2 \ket{n_{\vec{k}s}} = \sum_{\vec{k},s} 2 \left| \varepsilon_{\vec{k}s} \right|^2 \left( n_{\vec{k}s} + \frac{1}{2} \right) \Bigg|_{n_{\vec{k}s} = 0}  =  \sum_{\vec{k},s} 2 \left| \varepsilon_{\vec{k}s} \right|^2  =
 		\sum_{\vec{k},s} \frac{2 \pi \hbar \omega_{\vec{k}}}{L^3} = \\ = \sum_{\vec{k},s} \frac{\hbar \omega_{\vec{k}}}{(2 \pi)^2} \Delta k_x \Delta k_y \Delta k_z \Bigg|_{L \to \infty} = \frac{2}{(2 \pi)^3} \int d^3 p \hbar \omega_{\vec{k}} = \frac{2 \cdot 4 \pi}{(2 \pi)^2} \frac{\hbar}{c^3} \int \limits_0^{\infty} \omega^3 d  \omega \to \infty.
 	\end{multline}
-{\textcolor{red}{ So, fluctuations are infinite for multimode vacuum state }}
+So, fluctuations are infinite for multimode vacuum state.
 	
 	\subsection{Casimir effect (NOT FINISHED)} 
 \begin{figure}

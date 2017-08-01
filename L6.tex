@@ -13,7 +13,7 @@ Hamiltonian of system "quantum atom" $+$ "quantum field":
 \begin{equation}
 	\hat{\mathscr{H}} = \hat{\mathscr{H}}_A + \hat{\mathscr{H}}_F + \hat{\mathscr{H}}_{int}.
 \end{equation}
-where $\hat{\mathscr{H}}_A$ describes only \textit{atom}, $\hat{\mathscr{H}}_F$ describes only \textit{\textbf{quantised} field} and $\hat{\mathscr{H}}_{int}$ --- interaction part. Explicit expressions are:
+where $\hat{\mathscr{H}}_A$ describes only \textit{atom}, $\hat{\mathscr{H}}_F$ describes only \textit{\textbf{quantized} field} and $\hat{\mathscr{H}}_{int}$ --- interaction part. Explicit expressions are:
 \begin{eqnarray}
 	\hat{\mathscr{H}}_A &=& E_a \ket{a} \bra{a} + E_b \ket{b} \bra{b}, \\
 	\hat{\mathscr{H}}_F &=& \sum_{\vec{k}} \hbar \omega_{\vec{k}} \left( \hat{n}_{\vec{k}} + \frac{1}{2} \right), \qquad \hat{n}_{\vec{k}} = \hat{a}^{\dagger}_{\vec{k}} \hat{a}_{\vec{k}}, \\
@@ -21,9 +21,9 @@ where $\hat{\mathscr{H}}_A$ describes only \textit{atom}, $\hat{\mathscr{H}}_F$ 
 \end{eqnarray}
 where field operator is given by
 \begin{equation}
-	\hat{\vec{E}} = \sum_{\kv} \varepsilon_{\kv} \left( \hat{a}_{\kv} \vec{e}_{\kv} e^{i \kv \vec{r}} + \hat{a}^{\dagger}_{\kv} \vec{e}^*_{\kv} e^{-i \kv \vec{r}} \right).
+	\hat{\vec{E}} = \sum_{\kv} \varepsilon_{\kv} \left( \hat{a}_{\kv} \vec{e}_{\kv} e^{i \kv \vec{r}} + \hat{a}^{\dagger}_{\kv} \vec{e}^*_{\kv} e^{-i \kv \vec{r}} \right),
 \end{equation}
-For simplicity we consider case $\vec{k} = 0$ and $\vec{e}_{\kv} \in \mathbb{R}$ so we have
+where $\vec{e}_{\kv}$ is polarization vector. For simplicity we consider case $\vec{k} = 0$ and $\vec{e}_{\kv} \in \mathbb{R}$ so we have
 \begin{equation}
 	\hat{\vec{E}} = \sum_{\vec{k}} \vec{e}_{\vec{k}} \varepsilon_{\kv} \left( \hat{a}^{\dagger}_{\kv} + \hat{a}_{\kv} \right).
 \end{equation}
@@ -94,7 +94,7 @@ To answer how act new operators $\hat{\sigma}_{+}$ and $\hat{\sigma}_{-}$ consid
 	\hat{\sigma}_{+} \ket{b} = \ket{a} \braket{b}{b} = \ket{a}, \\
 	\hat{\sigma}_{-} \ket{a} = \ket{b} \braket{a}{a} = \ket{b}.
 \end{eqnarray}
-The operator $\hat{\sigma}_{+}$ takes the system lower state to upper states vice versa.
+The operator $\hat{\sigma}_{+}$ takes the system from lower state to upper states vice versa.
 
 Usually $\vec{d}_{aa} = \vec{d}_{bb} = 0$, so
 \begin{equation}
@@ -129,7 +129,7 @@ For simplicity let us consider one mode field
 	\hat{\mathscr{H}} = \underbrace{\hbar \omega \left( \hat{a}^{\dagger}\hat{a} + \half \right) + \frac{\hbar \omega_0}{2} \hat{\sigma}_z}_{\hat{\mathscr{H}}_0} + \underbrace{\hbar g \left( \hat{\sigma}_+\hat{a} + \hat{a}^{\dagger} \hat{\sigma}_- \right)}_{\hat{V}}.
 	\label{eq:hamillll}
 \end{equation}
-Now we go in the interaction representation
+Now we pass into the representation of interaction
 \begin{equation}
 	\hat{\mathscr{H}}_V = e^{\frac{i}{\hbar} \hat{\mathscr{H}}_0 t} \hat{V} e^{-\frac{i}{\hbar} \hat{\mathscr{H}}_0 t}.
 \end{equation}
@@ -150,7 +150,7 @@ Let us begin. We need to consider
 \end{equation}
 Different terms will appear:
 \begin{eqnarray}
-	e^{i \omega \hat{a}^{\dagger} \hat{a} t} \hat{a} e^{-i \omega \hat{a}^{\dagger} \hat{a} t} &=& \hat{a} e^{- \omega t}, \\
+	e^{i \omega \hat{a}^{\dagger} \hat{a} t} \hat{a} e^{-i \omega \hat{a}^{\dagger} \hat{a} t} &=& \hat{a} e^{- i\omega t}, \\
 	e^{i \omega \hat{a}^{\dagger} \hat{a} t} \hat{a}^{\dagger} e^{-i \omega \hat{a}^{\dagger} \hat{a} t} &=& \hat{a}^{\dagger} e^{i \omega t}, \\
 	e^{i \frac{\omega_0}{2} \hat{\sigma}_z t} \hat{\sigma}_+ e^{-i \frac{\omega_0}{2} \hat{\sigma}_z t} &=& \hat{\sigma}_+ e^{i \omega_0 t}, \\
 	e^{i \frac{\omega_0}{2} \hat{\sigma}_z t} \hat{\sigma}_- e^{-i \frac{\omega_0}{2} \hat{\sigma}_z t} &=& \hat{\sigma}_- e^{-i \omega_0 t}.

@@ -26,7 +26,7 @@ The decay rate $\gamma$ can be written as
 	\gamma = 2 \pi \left| g(\omega) \right|^2 \frac{D(\omega)}{V},
 	\label{eq:gamma}
 \end{equation}
-where $\rho = D/V$ is the density of state. In vacuum it is $D_0(\omega) = \frac{\omega^2}{\pi^2 c^3}$ but in a cavity it can be approximated by the Lorentzian (fig) with resonant frequency $\omega_0$
+where $D/V = \rho$ is the density of state. In vacuum it is $D_0(\omega) = \frac{\omega^2}{\pi^2 c^3}$ but in a cavity it can be approximated by the Lorentzian (fig) with resonant frequency $\omega_0$
 \begin{equation}
 	D(\omega) = \frac{1}{\pi} \frac{\omega_{0}/2Q}{(\omega - \omega_{0})^2 + \left( \omega_{0}/2Q \right)^2}.
 \end{equation}
@@ -121,7 +121,7 @@ To solve \eqref{eq:aa} and \eqref{eq:sigmaz} we need to know the time dependence
 In other words, we consider \textit{a single photon approximation}. If the photon is only one then all summands which are proportional to $\hat{a}^2$ or $\hat{a}^{\dagger 2}$ are identically zero. As the result, under these conditions, we obtain the following system of equations:
 \begin{equation}
 	\begin{cases}
-		\frac{d}{dt} \av{\hat{a}\dagger\hat{a}} = g \chi(t) - \Gamma \av{\hat{a}\dagger\hat{a}} \\
+		\frac{d}{dt} \av{\hat{a}\dag \hat{a}} = g \chi(t) - \Gamma \av{\hat{a}\dag\hat{a}} \\
 		\frac{d}{dt} \av{\hat{\sigma}_z} = - 2 g \chi(t) \\
 		\frac{d}{dt} \chi(t) = g \av{\hat{\sigma}_z} + 2 g \cdot y(t) + g - \frac{\Gamma}{2} \chi(t) \\
 		\frac{d}{dt} y(t) = - g \chi(t) - \Gamma y(t)

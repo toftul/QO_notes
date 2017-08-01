@@ -46,8 +46,6 @@
 \contentsline {subsubsection}{\numberline {8.1.3}Near-, intermediate- and far-field parts of Green's function}{48}{subsubsection.8.1.3}
 \contentsline {subsection}{\numberline {8.2}Spontaneous relaxation and local density-of-state (IN A MIXED UNITS)}{49}{subsection.8.2}
 \contentsline {subsubsection}{\numberline {8.2.1}An expression for spontaneous decay}{49}{subsubsection.8.2.1}
-\select@language {russian}
-\select@language {english}
 \contentsline {subsubsection}{\numberline {8.2.2}Spontaneous decay and Green's dyadics}{50}{subsubsection.8.2.2}
 \select@language {russian}
 \select@language {english}

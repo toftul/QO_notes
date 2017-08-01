@@ -7,7 +7,7 @@
 	\label{fig:truebaiko}
 \end{figure}
 
-Let consider a two-level system again. In section \ref{sec:atom-field_interaction} we obtained Rabi osculations. Needless to say there weren't any dissipative forces, so turning off the incident field will make the system <<freeze>> in the last state forever (fig. \ref{fig:turnofffield}). It is obvious that it is not happening in actual truth due to an interaction with immediate media. Adding phenomenological terms to equations for $C_a$ and $C_b$ (e.g. \eqref{eq:rabi_system}) is incorrect because we don't know time dependence of $\ket{\psi(t)}$. The correct way is to use \textit{density matrix formalism}.
+Let consider a two-level system again. In section \ref{sec:atom-field_interaction} we obtained Rabi osculations. Needless to say there weren't any dissipative forces, so turning off the incident field will make the system "freeze" in the last state forever (fig. \ref{fig:turnofffield}). It is obvious that it is not happening in actual truth due to an interaction with immediate media. Adding phenomenological terms to equations for $C_a$ and $C_b$ (e.g. \eqref{eq:rabi_system}) is incorrect because we don't know time dependence of $\ket{\psi(t)}$. The correct way is to use \textit{density matrix formalism}.
 
 \begin{figure}[h!]
 	\centering
@@ -190,15 +190,15 @@ or
 \end{equation}
 where $\omega_0 = \omega_a - \omega_b$. Needless to note this is not a RWA yet. Let $\rho_{ab} = \widetilde{\rho}_{ab} e^{-i \omega_0 t}$ then
 \begin{multline}
-	\dot{\widetilde{\rho}}_{ab} = i \frac{E(t) d_{ab} e^{i \omega_0 t}}{\hbar} \left( \rho_{ab} - \rho_{bb} \right) = i \frac{E_0 d_{ab}}{2 \hbar} \left( e^{i \omega t} + e^{- i \omega t} \right) e^{i \omega_0 t} \left( \rho_{ab} - \rho_{bb} \right) = \\ = \Big/ \omega_0 - \omega \ll \omega_0 \Big/ \approx 
-	i \underbrace{\frac{E_0 d_{ab}}{2 \hbar}}_{\Omega_R/2} e^{i \Delta t}\left( \rho_{ab} - \rho_{bb} \right).
+	\dot{\widetilde{\rho}}_{ab} = i \frac{E(t) d_{ab} e^{i \omega_0 t}}{\hbar} \left( \rho_{bb} - \rho_{aa} \right) = i \frac{E_0 d_{ab}}{2 \hbar} \left( e^{i \omega t} + e^{- i \omega t} \right) e^{i \omega_0 t} \left( \rho_{bb} - \rho_{aa} \right) = \\ = \Big/ \omega_0 - \omega \ll \omega_0 \Big/ \approx 
+	i \underbrace{\frac{E_0 d_{ab}}{2 \hbar}}_{\Omega_R/2} e^{i \Delta t}\left( \rho_{bb} - \rho_{aa} \right).
 \end{multline}
 So in RWA we have
 \begin{equation}
-	\dot{\widetilde{\rho}}_{ab} = i \frac{\Omega_R}{2} e^{i \Delta t} \left( \rho_{ab} - \rho_{bb} \right).
+	\dot{\widetilde{\rho}}_{ab} = i \frac{\Omega_R}{2} e^{i \Delta t} \left( \rho_{bb} - \rho_{aa} \right).
 \end{equation}
 
-One may ask a question what are benefits of density matrix formalism? Using such approach we easily <<upgrade>> \eqref{eq:vonN} by adding dissipation terms. Rules are
+One may ask a question what are benefits of density matrix formalism? Using such approach we easily "upgrade" \eqref{eq:vonN} by adding dissipation terms. Rules are
 \begin{equation}
 	\dot{\hat{\rho}} = - \frac{i}{\hbar} \left[ \hat{\mathscr{H}}, \hat{\rho} \right] - \frac{1}{2} \left\{ \hat{\Gamma}, \hat{\rho} \right\},
 \end{equation}

@@ -1,7 +1,7 @@
 \section{Atom-field interaction. Semiclassical theory}
 \label{sec:atom-field_interaction}
 
-A word \textit{semiclassical} in this context means the following: let us consider a classical electromagnetic field and a <<quantum>> atom. For simplicity let us take two-level system (fig. \ref{fig:2lvl}). Then throw light on this system.
+The word \textit{semiclassical} in this context means the following: let us consider a classical electromagnetic field and a "quantum" atom. For simplicity let us take the two-level system (fig. \ref{fig:2lvl}). Then throw light on this system.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.35\linewidth]{fig/L4/2lvl}
@@ -21,14 +21,15 @@ So we have $E_a$ for $\ket{a}$ and $E_b$ for $\ket{b}$. After introducing electr
 \begin{equation}
 	\hat{\mathscr{H}} = \frac{(\hat{\vec{p}} - \frac{e}{c} \vec{A})^2}{2m} + \hat{V}(\vec{r}) + e \varphi.
 \end{equation}
-Potentials are not determined and gauging may take place:
+Potentials are not determined and gauge transformation may take place:
 \begin{equation}
 	\vec{A} \to \vec{A} + \frac{\hbar c}{e} \nabla \chi, \qquad \varphi \to \varphi - \frac{\hbar c}{e} \parder{\chi}{t}.
 \end{equation}
-After applying this gauging 
+and
 \begin{equation}
 	\psi \to \psi e^{i \chi(\vec{r},t)}.
 \end{equation}
+
 Let a plane wave is falling 
 \begin{equation}
 	\vec{A} = \vec{A}_0 e^{i \vec{k}\vec{r} - i \omega t} = \vec{A}_0(t) e^{i \vec{k}\vec{r}}.
@@ -50,7 +51,7 @@ characteristic size of an atom is about $10^{-10} \text{ m}$, size of a quantum 
 \end{figure}
 
 
-Using this simplification we can $\vec{r}_0 \to \vec{r}$, where $\vec{r}_0$ is a vector of a centre of the system. More formaly this result may be achieved by expanding $\vec{A}$ near $\vec{r}_0$ in Taylor series:
+Using this simplification we can $\vec{r}_0 \to \vec{r}$, where $\vec{r}_0$ is a vector of a centre of the system. This result may be achieved more formally by expanding $\vec{A}$ near $\vec{r}_0$ in Taylor series:
 \begin{equation}
 	\vec{A} (\vec{r},t) \approx \vec{A}_0 (t) e^{i \vec{k} \vec{r}_0} \left( 1 + i \vec{k} \bm{\rho} \right) \approx \vec{A}_0 e^{i \vec{k} \vec{r}_0}.
 \end{equation} 
@@ -58,7 +59,7 @@ So field does not change in space, but in time. Let us choose the system of axes
 \begin{equation}
 	\hat{\mathscr{H}} = \frac{1}{2m} \left( \hat{\vec{p}}  - \frac{e}{c} \vec{A}_0(t) \right)^2 + V (\vec{r}) + e \varphi.
 \end{equation}
-The standard choice it to use Coulomb gauging:
+The standard choice it to use Coulomb gauge:
 \begin{equation}
 	\Div \vec{A} = 0, \qquad \varphi = 0.
 \end{equation}

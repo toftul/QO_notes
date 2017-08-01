@@ -10,13 +10,13 @@ Lets consider Michelson stellar interferometer (fig \ref{fig:stellar}). From dis
 \begin{equation}
 	\vec{E} = \vec{E}_{\vec{k}} \left( e^{i \vec{k} \vec{r}_{M_1}}  + e^{i \vec{k} \vec{r}_{M_2}} \right) + \vec{E}_{\vec{k}'} \left( e^{i \vec{k'} \vec{r}_{M_1}} + e^{i \vec{k}' \vec{r}_{M_2}} \right).
 \end{equation}
-If we decide to compute the intensity, we will get { \textcolor{red} {(see Scully)}}
+If we decide to compute the intensity, we will get (see Scully)
 \begin{equation}
-	I = \langle \vec{E} \cdot \vec{E}^* \rangle_t  = 4 I_0 \left( 1 + \underbrace{\cos \left[\frac{\left( \vec{k} + \vec{k}' \right) \vec{r}_0}{2}\right]}_{\text{fast term}} \underbrace{\cos \left[{\textcolor{red}\half}  k r_0 \varphi \right]}_{\text{slow term}} \right),
+	I = \langle \vec{E} \cdot \vec{E}^* \rangle_t  = 4 I_0 \left( 1 + \underbrace{\cos \left[\frac{\left( \vec{k} + \vec{k}' \right) \vec{r}_0}{2}\right]}_{\text{fast term}} \underbrace{\cos \left[\half  k r_0 \varphi \right]}_{\text{slow term}} \right),
 \end{equation}
-where $\vec{r}_0 = \vec{r}_{M_1} - \vec{r}_{M_2}$, {\textcolor{red}{$I_0=\langle \vec{E}_{\vec{k}} \cdot \vec{E}_{\vec{k}}^* \rangle_t=\langle \vec{E}_{\vec{k'}} \cdot \vec{E}_{\vec{k'}}^* \rangle_t$}}. To make out light and dark spots we need the following condition
+where $\vec{r}_0 = \vec{r}_{M_1} - \vec{r}_{M_2}$, $I_0=\langle \vec{E}_{\vec{k}} \cdot \vec{E}_{\vec{k}}^* \rangle_t=\langle \vec{E}_{\vec{k'}} \cdot \vec{E}_{\vec{k'}}^* \rangle_t$. To make out light and dark spots we need the following condition
 \begin{equation}
-	k r_0 \varphi \approx \frac{\pi}{{\textcolor{red} 1}} \qquad \to \qquad \varphi = \frac{\pi}{k r_0}.
+	k r_0 \varphi \approx \pi \qquad \to \qquad \varphi = \frac{\pi}{k r_0}.
 \end{equation}
 It means that to change light spot to the dark one  we need $\Delta r_0 = \frac{\pi}{k \varphi}$. So the bigger distance between mirrors $M_1$ and $M_2$, the better resolution we get (we will be able to detect smaller $\varphi$). But there appear to be a lot of technical troubles.
 \begin{figure}
@@ -129,7 +129,7 @@ To simplify all the calculations let us consider only \textit{one mode} and only
 \begin{equation}
 	\hat{\vec{E}}^+ = \hat{E}^+ \vec{e}_{\vec{k}}.
 \end{equation}
-When an indecent photon got absorbed, it makes detector atom to become excited: $\ket{i} \to \ket{f}$ (see fig. \ref{fig:dec}, b).
+When an indecent photon got absorbed, it excites the atom detector: $\ket{i} \to \ket{f}$ (see fig. \ref{fig:dec}, b).
 
 
 The probability of  absorption of one photon (= the probability of detection of one photon) depends only on operator $\hat{E}^+$ due to detection principle (see fig. \ref{fig:dec}). The transition probability of the detector atom for absorbing a photon from the field at position $\vec{r}$ between times $t$ and $t+dt$ is proportional to $\omega_1(\vec{r},t) dt$, with
@@ -165,7 +165,7 @@ A particular case is often used, precisely a case $\vec{r}_1 = \vec{r}_2$ and $\
 \begin{equation}
 	g^{(2)} (\tau) = \frac{\langle \hat{E}^-(\tau) \hat{E}^-(0) \hat{E}^+(0) \hat{E}^+(\tau)\rangle}{\langle \hat{E}^-(0) \hat{E}^+(0) \rangle^2},
 \end{equation}
-where was used $\langle \hat{E}^-(0) \hat{E}^+(0) \rangle = \langle \hat{E}^-(\tau) \hat{E}^+(\tau) \rangle$, $\forall \tau$ which means that the signal is homogeneous. For a case of only \textit{one mode field} we can write
+where $\langle \hat{E}^-(0) \hat{E}^+(0) \rangle = \langle \hat{E}^-(\tau) \hat{E}^+(\tau) \rangle$, $\forall \tau$ was used which means that the signal is homogeneous. For a case of only \textit{one mode field} we can write
 \begin{equation}
 	g^{(2)} (\tau) = \frac{\langle \hat{a}^{\dagger} (\tau) \hat{a}^{\dagger} (0) \hat{a}(0) \hat{a}(\tau) \rangle}{\langle \hat{a}^{\dagger} \hat{a} \rangle^2}.
 \end{equation}
