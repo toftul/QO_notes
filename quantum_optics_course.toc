@@ -8,61 +8,75 @@
 \contentsline {subsection}{\numberline {1.3}Formulation of the problem}{5}{subsection.1.3}
 \contentsline {subsection}{\numberline {1.4}Field quantization}{7}{subsection.1.4}
 \contentsline {subsection}{\numberline {1.5}Ladder operators. Fock state. Second quantization}{9}{subsection.1.5}
+\contentsline {subsubsection}{Homework}{9}{testexample.1}
 \contentsline {subsection}{\numberline {1.6}Fields' fluctuation}{9}{subsection.1.6}
-\contentsline {subsection}{\numberline {1.7}Casimir effect (NOT FINISHED)}{10}{subsection.1.7}
-\contentsline {section}{\numberline {2}Coherent states}{11}{section.2}
+\contentsline {subsubsection}{Homework}{10}{testexample.2}
+\contentsline {subsection}{\numberline {1.7}Casimir effect (NOT STARTED)}{10}{subsection.1.7}
+\contentsline {section}{\numberline {2}Coherent states}{12}{section.2}
 \select@language {russian}
 \select@language {english}
-\contentsline {subsection}{\numberline {2.1}Eigenfunction}{11}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Orthogonality}{12}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Fluctuations}{13}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Squeezed states or getting the maximum accuracy!}{16}{subsection.2.4}
-\contentsline {section}{\numberline {3}The coherence of light}{18}{section.3}
+\contentsline {subsection}{\numberline {2.1}Eigenfunction}{12}{subsection.2.1}
+\contentsline {subsubsection}{Homework}{13}{testexample.4}
+\contentsline {subsection}{\numberline {2.2}Orthogonality}{14}{subsection.2.2}
+\contentsline {subsubsection}{Homework}{15}{testexample.7}
+\contentsline {subsection}{\numberline {2.3}Fluctuations}{15}{subsection.2.3}
+\contentsline {subsubsection}{Homework}{17}{testexample.8}
+\contentsline {subsection}{\numberline {2.4}Squeezed states or getting the maximum accuracy!}{17}{subsection.2.4}
+\contentsline {subsubsection}{Homework}{19}{testexample.9}
+\contentsline {section}{\numberline {3}The coherence of light}{20}{section.3}
 \select@language {russian}
 \select@language {english}
-\contentsline {subsection}{\numberline {3.1}Bunching and antibunching of photons}{18}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Quantum theory of photodetection}{21}{subsection.3.2}
-\contentsline {section}{\numberline {4}Atom-field interaction. Semiclassical theory}{24}{section.4}
-\contentsline {section}{\numberline {5}Density matrix of two energy level system}{28}{section.5}
-\contentsline {subsection}{\numberline {5.1}Density matrix of mixed state}{30}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Subsystem density matrix}{31}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Density matrix for two-level system}{31}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Bloch sphere}{32}{subsection.5.4}
+\contentsline {subsection}{\numberline {3.1}Bunching and antibunching of photons}{20}{subsection.3.1}
+\contentsline {subsubsection}{Homework}{23}{testexample.10}
+\contentsline {subsection}{\numberline {3.2}Quantum theory of photodetection}{23}{subsection.3.2}
+\contentsline {section}{\numberline {4}Atom-field interaction. Semiclassical theory}{26}{section.4}
+\contentsline {subsubsection}{Homework}{30}{testexample.13}
+\contentsline {section}{\numberline {5}Density matrix of two energy level system}{31}{section.5}
+\contentsline {subsection}{\numberline {5.1}Density matrix of mixed state}{33}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Subsystem density matrix}{34}{subsection.5.2}
+\contentsline {subsubsection}{Homework}{34}{testexample.15}
+\contentsline {subsection}{\numberline {5.3}Density matrix for two-level system}{34}{subsection.5.3}
+\contentsline {subsubsection}{Homework}{35}{testexample.16}
+\contentsline {subsection}{\numberline {5.4}Bloch sphere}{36}{subsection.5.4}
 \select@language {russian}
 \select@language {english}
-\contentsline {section}{\numberline {6}Atom--field interaction. Quantum approach}{35}{section.6}
-\contentsline {subsection}{\numberline {6.1}Jaynes\IeC {\textendash }Cummings model (RWA)}{35}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Collapse and revival}{39}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Energy spectrum. Dispersion relation}{39}{subsection.6.3}
-\contentsline {section}{\numberline {7}Spontaneous relaxation. Weisskopf-Wigner theory}{43}{section.7}
+\contentsline {subsubsection}{Homework}{37}{testexample.18}
+\contentsline {section}{\numberline {6}Atom--field interaction. Quantum approach}{39}{section.6}
+\contentsline {subsection}{\numberline {6.1}Jaynes\IeC {\textendash }Cummings model (RWA)}{39}{subsection.6.1}
+\contentsline {subsubsection}{Homework}{43}{testexample.20}
+\contentsline {subsection}{\numberline {6.2}Collapse and revival}{43}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Energy spectrum. Dispersion relation}{43}{subsection.6.3}
+\contentsline {section}{\numberline {7}Spontaneous relaxation. Weisskopf-Wigner theory}{48}{section.7}
 \select@language {russian}
 \select@language {english}
-\contentsline {section}{\numberline {8}Dipole radiation. Dyadic Green's function. The Purcell effect: classical approach}{46}{section.8}
+\contentsline {section}{\numberline {8}Dipole radiation. Dyadic Green's function. The Purcell effect: classical approach}{51}{section.8}
 \select@language {russian}
 \select@language {english}
-\contentsline {subsection}{\numberline {8.1}Dipole radiation and dyadic Green's function}{46}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Green's function. General information}{46}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Derivation of the Green's function for Maxwell equations}{47}{subsubsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.3}Near-, intermediate- and far-field parts of Green's function}{48}{subsubsection.8.1.3}
-\contentsline {subsection}{\numberline {8.2}Spontaneous relaxation and local density-of-state (IN A MIXED UNITS)}{49}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}An expression for spontaneous decay}{49}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Spontaneous decay and Green's dyadics}{50}{subsubsection.8.2.2}
+\contentsline {subsection}{\numberline {8.1}Dipole radiation and dyadic Green's function}{51}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Green's function. General information}{51}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Derivation of the Green's function for Maxwell equations}{52}{subsubsection.8.1.2}
+\contentsline {subsubsection}{Homework}{53}{testexample.23}
+\contentsline {subsubsection}{\numberline {8.1.3}Near-, intermediate- and far-field parts of Green's function}{53}{subsubsection.8.1.3}
+\contentsline {subsection}{\numberline {8.2}Spontaneous relaxation and local density-of-state (IN A MIXED UNITS)}{54}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}An expression for spontaneous decay}{54}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Spontaneous decay and Green's dyadics}{55}{subsubsection.8.2.2}
 \select@language {russian}
 \select@language {english}
 \select@language {russian}
 \select@language {english}
 \select@language {russian}
 \select@language {english}
-\contentsline {subsection}{\numberline {8.3}The Purcell factor}{51}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.3}The Purcell factor}{56}{subsection.8.3}
 \select@language {russian}
 \select@language {english}
-\contentsline {section}{\numberline {9}Theory of relaxation of electromagnetic filed. Heisenberg--Langevin method}{52}{section.9}
-\contentsline {subsection}{\numberline {9.1}In previous series}{52}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}the Heisenberg--Langevin equation}{52}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Properties of the stochastic operator}{54}{subsection.9.3}
-\contentsline {subsection}{\numberline {9.4}Equation of motion for the field correlation functions. Wiener--Khintchine theorem}{55}{subsection.9.4}
+\contentsline {section}{\numberline {9}Theory of relaxation of electromagnetic filed. Heisenberg--Langevin method}{58}{section.9}
+\contentsline {subsection}{\numberline {9.1}In previous series}{58}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}the Heisenberg--Langevin equation}{58}{subsection.9.2}
+\contentsline {subsubsection}{Homework}{60}{testexample.25}
+\contentsline {subsection}{\numberline {9.3}Properties of the stochastic operator}{60}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Equation of motion for the field correlation functions. Wiener--Khintchine theorem}{61}{subsection.9.4}
 \select@language {russian}
 \select@language {english}
-\contentsline {section}{\numberline {10}Atom in a damped cavity}{57}{section.10}
-\contentsline {subsection}{\numberline {10.1}The Purcell factor for a closed cavity}{57}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Rigorous derivation of the atomic decay}{58}{subsection.10.2}
+\contentsline {section}{\numberline {10}Atom in a damped cavity}{64}{section.10}
+\contentsline {subsection}{\numberline {10.1}The Purcell factor for a closed cavity}{64}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Rigorous derivation of the atomic decay}{65}{subsection.10.2}

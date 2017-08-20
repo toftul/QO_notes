@@ -31,7 +31,7 @@ As the wave function is unknown we use the density matrix approach. Density matr
 \begin{equation}
 	\rho_R = \Pi \left( 1 - e^{- \frac{\hbar \omega_{\vec{k}}}{kT}} \right) e^{- \frac{\hbar \omega_{\vec{k}} \hat{b}_{\kv}^{\dagger} \hat{b}_{\kv}}{kT}}, \qquad \bar{n}_{\kv}  = \frac{1}{e^{\frac{\hbar \omega_{\vec{k}}}{kT}} - 1}.
 \end{equation}
-The Hamiltonian of the system can be written as 
+The Hamiltonian of the system can be written as
 \begin{equation}
 	\hat{\mathcal{H}} = \underbrace{\hbar \omega \hat{a}^{\dagger} \hat{a}}_{\text{resonator}} + \underbrace{\sum_{\kv} \hbar \omega_{\kv} \hat{b}^{\dagger}_{\kv} \hat{b}_{\kv}}_{\text{cavity}} + \underbrace{\sum_{\kv} \hbar  \left( g_{\kv} \hat{b}_{\kv}^{\dagger} \hat{a}_{\kv} + g^*_{\kv} \hat{a}_{\kv}^{\dagger} \hat{b}_{\kv}  \right)}_{\hat{\mathcal{H}}_{\text{int}}}.
 \end{equation}
@@ -40,14 +40,14 @@ The  explicit form of $g_{\kv}$ is strongly depend on exact system. However we k
 Time evolution is defined by
 \begin{equation}
 	\hat{\dot{a}}(t) = \frac{i}{\hbar} \left[ \hat{\mathcal{H}}, \hat{a}  \right], \qquad  	\hat{\dot{b}}(t) = \frac{i}{\hbar} \left[ \hat{\mathcal{H}}, \hat{b}  \right],
-\end{equation} 
-which gives 
+\end{equation}
+which gives
 \begin{numcases}{}
 		\hat{\dot{a}}(t) = -i \omega \hat{a}(t) - i \sum_{\kv} g_{\kv}^* \hat{b}_{\kv}(t), \label{eq:a_dyn}\\
 		\hat{\dot{b}}_{\kv}(t) = -i \omega_{\kv} \hat{b}_{\kv}(t) - i  g_{\kv} \hat{a}(t),
 		\label{eq:b_dyn}
 \end{numcases}
-Important to notice that it is sensible to consider only the mean values of operators. 
+Important to notice that it is sensible to consider only the mean values of operators.
 
 Now let us solve this system. it is easy to verify that the solution of  \eqref{eq:b_dyn}  is
 \begin{equation}
@@ -61,11 +61,11 @@ where
 \begin{equation}
 	\hat{f}_a(t) \myeq i \sum_{\kv} g_{\kv}^* \hat{b}_{\kv}(0) e^{-i\omega_{\kv} t}
 \end{equation}
-is a stochastic operator as the number of photons in a particular time moment is undefined. After that we introduce 
+is a stochastic operator as the number of photons in a particular time moment is undefined. After that we introduce
 \begin{equation}
 	\hat{\tilde{a}}(t) \myeq \hat{a}(t) e^{i \omega t}, \qquad \hat{F}_{\tilde{a}} (t) = \hat{f}_a(t) e^{i \omega t}
 \end{equation}
-and obtain \textit{a stochastic integro-differential equation} 
+and obtain \textit{a stochastic integro-differential equation}
 \begin{equation}
 	\hat{\dot{\tilde{a}}}(t) = \sum_{\kv} \left| g_{\kv} \right|^2 \int \limits_0^t d\tau \hat{\tilde{a}} e^{i(\omega-\omega_{\kv})(t - \tau)} + \hat{F}_{\tilde{a}} (t).
 	\label{eq:st_int_dif}
@@ -102,6 +102,25 @@ So finally here is \textit{the Heisenberg--Langevin equation}:
 	That is nonsense! It couldn’t be, so we can not just put the stochastic term to zero. \textit{If there is a dissipation then there have to be fluctuation in the system.}
 \end{testexample}
 
+
+
+
+\begin{hw}[Deadline: 29th of December]
+	\addcontentsline{toc}{subsubsection}{Homework}
+
+	\begin{enumerate}
+		\item (4 pts) Consider two interacting cavities  described by the  Hamiltonian:
+		
+		$$
+		H=\hbar \omega a^{+}a+\hbar\omega b^{+}b+\hbar g(a^{+}b+b^{+}a)
+		$$
+		 Initially  there were  $N_{a}$ and $N_{b}$ photons in each resonator. Please, describe how the number of photon will change in time in each resonator.
+		
+		 {\it Hint}:  use the equation of operator motion to calculate $\hat n _a$ and $\hat n _b$
+	
+	\end{enumerate}
+\end{hw}
+
 \subsection{Properties of the stochastic operator}
 
 Let us find out properties of the stochastic operator $\hat{F}_a(t)$. The mean values are
@@ -110,7 +129,7 @@ Let us find out properties of the stochastic operator $\hat{F}_a(t)$. The mean v
 \end{equation}
 Now let us find the correlator
 \begin{multline}
-	\av{\hat{F}_a^{\dagger}(t) \hat{F}_a(t')} = \sum_{\kv \kv'} g^*_{\kv} g_{\kv'} \underbrace{\cdot \av{\hat{b}_{\kv}^{\dagger}(0) \hat{b}_{\kv}(0)} \cdot }_{\overset{\hookrightarrow=\bar{n}_{\kv} \delta_{\vec{k}\vec{k}'}}{\text{av. num. of ph. in } \kv}} e^{i(\omega_{\kv} - \omega)t - i(\omega_{\kv'} - \omega)t'} = \\ 
+	\av{\hat{F}_a^{\dagger}(t) \hat{F}_a(t')} = \sum_{\kv \kv'} g^*_{\kv} g_{\kv'} \underbrace{\cdot \av{\hat{b}_{\kv}^{\dagger}(0) \hat{b}_{\kv}(0)} \cdot }_{\overset{\hookrightarrow=\bar{n}_{\kv} \delta_{\vec{k}\vec{k}'}}{\text{av. num. of ph. in } \kv}} e^{i(\omega_{\kv} - \omega)t - i(\omega_{\kv'} - \omega)t'} = \\
 	= \sum_{\kv} \left| g_{\kv}\right|^2 \bar{n}_{\kv} e^{i (\omega_{\kv} - \omega)(t - t')} = \int \limits_0^{\infty} d \omega_{\kv} D(\omega_{\kv}) \left| g_{\kv}\right|^2 \bar{n}_{\kv} (\omega_{\kv}) e^{i (\omega_{\kv} - \omega)(t - t')} \approx \\ \approx \underbrace{D(\omega_{\kv}) \left| g_{\kv}\right|^2 \bar{n}_{\kv} (\omega_{\kv})}_{\text{slow func}} \cdot 2\pi \delta(t-t'),
 \end{multline}
 so we have
@@ -169,7 +188,7 @@ Which is correct in contrast to \eqref{eq:example}.
 
 To define the spectrum we need to use \textit{the Wiener--Khintchine theorem}. In short, this theorem allows to find spectrum using the knowledge of the correlation function (fig. \ref{fig:wiener}) using relation
 \begin{equation}
-	S_f(\omega) = \frac{1}{\pi} \int \limits_{-\infty}^{\infty} d \tau e^{-i \omega \tau} \cdot \av{f^*(t) f(t + \tau)} 
+	S_f(\omega) = \frac{1}{\pi} \int \limits_{-\infty}^{\infty} d \tau e^{-i \omega \tau} \cdot \av{f^*(t) f(t + \tau)}
 \end{equation}
 \begin{otherlanguage}{russian}	
 	\textcolor{red}{Спектр написал, как было на лекциях, хотя в Скалли (ур-е 9.3.11) немного другое выражение, там $\int_0^{\infty}$ и берут действительную часть от интеграла.}

@@ -35,7 +35,7 @@ Here we denoted:
 \begin{equation}
 	\vec{d}_{ij} \myeq \bra{i}  e \vec{r} \ket{j}, \qquad \hat{\sigma}_{ij} \myeq  \ket{i} \bra{j}.
 \end{equation}
-Then 
+Then
 \begin{equation}
 	\hat{\mathscr{H}}_{\text{int}} = - \sum_{ij} \sum_{\kv} \left(\vec{d}_{ij} \cdot \vec{e}_{\kv}\right) \sigma_{ij} \varepsilon_{\kv} \left( \hat{a}^{\dagger}_{\kv} + \hat{a}_{\kv} \right).
 \end{equation}
@@ -43,7 +43,7 @@ Introduce a new notation:
 \begin{equation}
 	\boxed{	g_{ij}^{\kv} \myeq - \frac{ \varepsilon_{\kv} \left(\vec{d}_{ij} \cdot  \vec{e}_{\kv}\right)}{\hbar}.}
 \end{equation}
-This is a similarity to Rabi frequency but for one mode of field. To simplify computations let $g^{\kv}_{ij} \in \mathbb{R}$. So our Mr. Hamiltonian 
+This is a similarity to Rabi frequency but for one mode of field. To simplify computations let $g^{\kv}_{ij} \in \mathbb{R}$. So our Mr. Hamiltonian
 \begin{equation}
 	\hat{\mathscr{H}} = E_a \hat{\sigma}_{aa} + E_b \hat{\sigma}_{bb} + \sum_{\vec{k}} \hbar \omega_{\kv} \left( \hat{a}^{\dagger}_{\kv} \hat{a}_{\kv} + \half \right) + \sum_{ij} \sum_{\kv} \hbar g_{ij}^{\kv} \hat{\sigma}_{ij} \left( \hat{a}^{\dagger}_{\kv} +  \hat{a}_{\kv} \right).
 \end{equation}
@@ -103,7 +103,7 @@ Usually $\vec{d}_{aa} = \vec{d}_{bb} = 0$, so
 \begin{equation}
 	g^{\kv}_{ab} = g^{\kv}_{ba} \myeq g^{\kv}.
 \end{equation}
-After that Hamiltonian may be written as 
+After that Hamiltonian may be written as
 \begin{equation}
 	\hat{\mathscr{H}} = \underbrace{\sum_{\kv} \hbar \omega_{\kv} \left( \hat{a}_{\kv}^{\dagger}\hat{a}_{\kv} + \half \right)}_{\text{field}} + \underbrace{\frac{\hbar \omega_0}{2} \hat{\sigma}_z}_{\text{atom}} + \underbrace{\hbar \sum_{\kv} g^{\kv} \left( \hat{\sigma}_+ + \hat{\sigma}_- \right) \left( \hat{a}^{\dagger}_{\kv} + \hat{a}_{\kv} \right)}_{\text{interaction}}.
 \end{equation}
@@ -134,7 +134,7 @@ Now we pass into the representation of interaction
 	\hat{\mathscr{H}}_V = e^{\frac{i}{\hbar} \hat{\mathscr{H}}_0 t} \hat{V} e^{-\frac{i}{\hbar} \hat{\mathscr{H}}_0 t}.
 \end{equation}
 \begin{enumerate}
-	\item[\textit{Remark}:] \textit{The interaction representation means the following. 
+	\item[\textit{Remark}:] \textit{The interaction representation means the following.
 	After unitary transformation }
 	\begin{equation*}
 	\ket{\widetilde{\psi}} = e^{\frac{i}{\hbar} \hat{\mathscr{H}}_0 t} \ket{\psi}, \qquad \hat{\mathscr{H}} \to \hat{\mathscr{H}}_V
@@ -142,7 +142,7 @@ Now we pass into the representation of interaction
 	\textit{we obtain new effective Schrödinger equation}
 	\begin{equation*}
 	i \hbar \dot{\ket{\psi}} = \hat{\mathscr{H}} \ket{\psi} \quad \to \quad i \hbar \dot{\ket{\widetilde{\psi}}} = \hat{\mathscr{H}}_V \ket{\widetilde{\psi}}.
-	\end{equation*}   
+	\end{equation*}
 \end{enumerate}
 Let us begin. We need to consider
 \begin{equation}
@@ -163,7 +163,7 @@ As a matter of convenience we introduce $\Delta \myeq \omega_0 - \omega$. An eff
 \begin{equation}
 	\quad i \hbar \parder{}{t}\ket{\widetilde{\psi}} = \hat{\mathscr{H}}_V \ket{\widetilde{\psi}}.
 \end{equation}
-After that we expand wave function in series 
+After that we expand wave function in series
 \begin{equation}
 	\ket{\widetilde{\psi}} = \sum_{n} C_{a,n}(t) \ket{n} \ket{a} + \sum_{n} C_{b,n}(t) \ket{n} \ket{b},
 \end{equation}
@@ -190,10 +190,10 @@ For simplicity let us consider a resonant excitation, it means we need to put $\
 	\begin{cases}
 		\dot{C}_{a,n}(t) = -i g \sqrt{n+1} C_{b,n+1}(t) \\
 		\dot{C}_{b,n+1}(t) = -i g \sqrt{n+1} C_{a,n}(t)
-	\end{cases} \qquad \to \qquad 
+	\end{cases} \qquad \to \qquad
 	\ddot{C}_{a,n} (t) + \underbrace{g^2(n+1)}_{\Omega_{R_n}^2} C_{a,n}(t) = 0.
 \end{equation}
-Easy to notice, we obtained osculations with angular frequency 
+Easy to notice, we obtained osculations with angular frequency
 \begin{equation}
 	\boxed{\Omega_{R_n} = g \sqrt{n+1}.}
 \end{equation}
@@ -203,6 +203,21 @@ A physical interpretation of such oscillations is shown in fig. \ref{fig:228}.
 	If we put $n=0$ we get $\Omega_{R_0} = g \neq 0$. We have a vacuum interaction: no field, interaction exists!
 	%\textcolor{red}{(UNCOMMENT THIS LATER! (see source))}
 \end{testexample}
+
+
+
+\begin{hw}[Deadline: 29th of December]
+	\addcontentsline{toc}{subsubsection}{Homework}
+
+	\begin{enumerate}
+		\item (6 pts) (See problem 6.2 from Scully). One of the common models of light-atom interaction in a cavity can be described by the Hamiltonian :
+		$$
+		H=\hbar\omega_{0}\sigma_{z}+ \hbar \omega a^{+}a+\hbar g(\sqrt{a^{+}a}a^{+}\sigma_{-}+\sigma_{+}a\sqrt{a^{+}a}),
+		$$
+		where interaction depends on the intensity. Compute the inverse population at the timescale of Rabi oscillations, considering  initial state of photons as coherent.
+	\end{enumerate}
+\end{hw}
+
 
 \subsection{Collapse and revival}
 
@@ -227,10 +242,10 @@ Let us find eigenstates of $\hat{\mathscr{H}}$ which is given by \eqref{eq:hamil
 	\hat{\mathscr{H}} = \underbrace{\hbar \omega  \hat{n} + \frac{\hbar \omega_0}{2} \hat{\sigma}_z}_{\hat{\mathscr{H}}_0} + \underbrace{\hbar g \left( \hat{\sigma}_+\hat{a} + \hat{a}^{\dagger} \hat{\sigma}_- \right)}_{\hat{\mathscr{H}}_{\text{int}}}.
 \end{equation}
 
-The equation for eigenvalues is 
+The equation for eigenvalues is
 \begin{equation}
 \hat{\mathscr{H}} \ket{\psi} = E \ket{\psi}.
-\label{eq:eigen} 
+\label{eq:eigen}
 \end{equation}
 Next terms will appear:
 \begin{eqnarray}
@@ -249,7 +264,7 @@ Each of $\ket{\varphi_n}$ acts on its own subspace and does not affect the other
 \end{equation}
 It leads to a very imports consequence --- $\hat{\mathscr{H}}$ is \textit{block-diagonal matrix}:
 \begin{equation}
-	\hat{\mathscr{H}} = 
+	\hat{\mathscr{H}} =
 	\begin{pmatrix}
 		\hat{\mathcal{H}}_1 & 0 & 0 & \dots & 0 & \dots \\
 		0& \hat{\mathcal{H}}_2 &0 & \dots &0 & \dots\\
@@ -268,7 +283,7 @@ We simplified our problem and now we need only to diagonalize $2 \times 2$ matri
 
 In an explicit form we need to diagonalize
 \begin{multline}
-	\hat{\mathcal{H}}_n = \hat{\mathcal{H}}^0_{n} + \hat{\mathcal{H}}^{\text{int}}_n = 
+	\hat{\mathcal{H}}_n = \hat{\mathcal{H}}^0_{n} + \hat{\mathcal{H}}^{\text{int}}_n =
 	\begin{pmatrix}
 		\frac{\hbar \omega_0}{2} + \hbar \omega n & 0 \\
 		0 & - \frac{\hbar \omega_0}{2} + \hbar \omega n
@@ -289,7 +304,7 @@ where $\Delta = \omega - \omega_0$ and $\hat{I} = \begin{pmatrix}
 \end{pmatrix}$ is an identity matrix. Human by nature is lazy, so we do. It means let us consider a simple case when $\Delta = 0$, so
 \begin{equation}
 	\det \left( \hat{\mathcal{H}}_n - E \hat{I} \right) = 0 \quad \to \quad \left( E - \hbar \omega (n + \half) \right) = \hbar^2 g^2 (n+1)
-\end{equation} 
+\end{equation}
 or
 \begin{equation}
 	\begin{cases}
@@ -329,7 +344,7 @@ Eigenstates may be written as a rotated $\ket{a,n}$ and $\ket{b,n+1}$ states
 where $\cos \vartheta_n = \frac{2 g \sqrt{n+1}}{\sqrt{(R_n - \Delta)^2 + 4 g^2 (n+1)}}$. Just to make things clear, $\ket{a,n}$ and $\ket{b,n+1}$ are eigenfunctions of $\hat{\mathcal{H}}^0_{n}$, after 'turning on' an interaction we gain a plane rotation!
 
 
-States $\ket{\varphi_{1n}}$ and $\ket{\varphi_{2n}}$ --- \textit{polariton states}. This is a mixed stated of light and medium. 
+States $\ket{\varphi_{1n}}$ and $\ket{\varphi_{2n}}$ --- \textit{polariton states}. This is a mixed stated of light and medium.
 
 
 For $\Delta = 0$ we have $\vartheta = \frac{\pi}{4}$. It means that

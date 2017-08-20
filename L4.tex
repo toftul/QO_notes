@@ -30,18 +30,18 @@ and
 	\psi \to \psi e^{i \chi(\vec{r},t)}.
 \end{equation}
 
-Let a plane wave is falling 
+Let a plane wave is falling
 \begin{equation}
 	\vec{A} = \vec{A}_0 e^{i \vec{k}\vec{r} - i \omega t} = \vec{A}_0(t) e^{i \vec{k}\vec{r}}.
 \end{equation}
-Assume that characteristic scale of the system is such that 
+Assume that characteristic scale of the system is such that
 \begin{equation}
 	L \ll \lambda
 	\label{eq:condition}
 \end{equation}
-is satisfied. Condition \eqref{eq:condition} is satisfied for lots of quantum systems. 
-For example, visible light is $\lambda \sim 400 \div 800 \text{ nm}$, 
-characteristic size of an atom is about $10^{-10} \text{ m}$, size of a quantum dot is about $10 \text{ nm}$. 
+is satisfied. Condition \eqref{eq:condition} is satisfied for lots of quantum systems.
+For example, visible light is $\lambda \sim 400 \div 800 \text{ nm}$,
+characteristic size of an atom is about $10^{-10} \text{ m}$, size of a quantum dot is about $10 \text{ nm}$.
 
 \begin{figure}[h!]
 	\centering
@@ -54,7 +54,7 @@ characteristic size of an atom is about $10^{-10} \text{ m}$, size of a quantum 
 Using this simplification we can $\vec{r}_0 \to \vec{r}$, where $\vec{r}_0$ is a vector of a centre of the system. This result may be achieved more formally by expanding $\vec{A}$ near $\vec{r}_0$ in Taylor series:
 \begin{equation}
 	\vec{A} (\vec{r},t) \approx \vec{A}_0 (t) e^{i \vec{k} \vec{r}_0} \left( 1 + i \vec{k} \bm{\rho} \right) \approx \vec{A}_0 e^{i \vec{k} \vec{r}_0}.
-\end{equation} 
+\end{equation}
 So field does not change in space, but in time. Let us choose the system of axes so as to $\vec{r}_0 = 0$. It means that $\vec{A} \approx \vec{A}_0 (t)$. So
 \begin{equation}
 	\hat{\mathscr{H}} = \frac{1}{2m} \left( \hat{\vec{p}}  - \frac{e}{c} \vec{A}_0(t) \right)^2 + V (\vec{r}) + e \varphi.
@@ -82,8 +82,8 @@ Schroedinger equation gives us
 \begin{equation}
 	\underbrace{\left( - \frac{\hbar^2}{2m} \nabla^2 + V \right)}_{\hat{\mathscr{H}}_0} \widetilde{\psi} (\vec{r},t) = i \hbar \parder{\widetilde{\psi}}{t} - \hbar \vec{r} \cdot \parder{\vec{g}}{t} \widetilde{\psi}.
 	\label{eq:tmp143}
-\end{equation} 
-Lets pay attention to  
+\end{equation}
+Lets pay attention to
 \begin{equation}
 	\parder{\vec{g}}{t} = \frac{e}{\hbar c} \parder{\vec{A}_0(t)}{t} = - \frac{e}{\hbar} \vec{E}(t).
 \end{equation}
@@ -117,13 +117,13 @@ So solution is
 	\left( E_a C_a \ket{a} + E_b C_b \ket{b} \right) - \vec{d} \cdot \bm{\varepsilon} C_a \ket{a} - \vec{d} \cdot \bm{\varepsilon} C_b \ket{b} = i \hbar \dot{C}_a \ket{a} + i \hbar \dot{C}_b \ket{b}.
 	\label{eq:tmp150}
 \end{equation}
-Projections to $\ket{a}$ and $\ket{b}$ gives us 
+Projections to $\ket{a}$ and $\ket{b}$ gives us
 \begin{equation}
 \begin{cases}
 	\begin{matrix}
 	\bra{a} \cdot \eqref{eq:tmp150}: &\qquad&
 	E_a C_a - C_a \bra{a} \vec{d} \cdot \bm{\varepsilon} \ket{a} - C_b \bra{a} \vec{d} \cdot \bm{\varepsilon} \ket{b} = i \hbar \dot{C}_a, \\  \\
-	\bra{b} \cdot \eqref{eq:tmp150}: &\qquad& 
+	\bra{b} \cdot \eqref{eq:tmp150}: &\qquad&
 	E_b C_b - C_b \bra{b} \vec{d} \cdot \bm{\varepsilon} \ket{b} - C_a \bra{b} \vec{d} \cdot \bm{\varepsilon} \ket{a} = i \hbar \dot{C}_b.
 	\end{matrix}
 \end{cases}
@@ -132,7 +132,7 @@ Projections to $\ket{a}$ and $\ket{b}$ gives us
 
 Let us assume that field $\bm{\varepsilon}$ is not changing in space, so we can write
 \begin{equation}
-	\bra{a} \vec{d} \cdot \bm{\varepsilon} \ket{a} = \bra{a} \vec{d} \ket{a} \cdot \bm{\varepsilon}, \qquad 
+	\bra{a} \vec{d} \cdot \bm{\varepsilon} \ket{a} = \bra{a} \vec{d} \ket{a} \cdot \bm{\varepsilon}, \qquad
 	\bra{a} \vec{d} \cdot \bm{\varepsilon} \ket{b} = \bra{a} \vec{d} \ket{b} \cdot \bm{\varepsilon}.
 \end{equation}
 Dipole matrix elements are
@@ -144,10 +144,10 @@ By symmetry considerations it follows  $\left| \vec{d}_{\alpha \alpha} \right| \
 	\begin{cases}
 		i \hbar \dot{C}_a = E_a C_a - C_b \vec{d}_{ab} \cdot \bm{\varepsilon}, \\
 		i \hbar \dot{C}_b = E_b C_b - C_a \vec{d}_{ba} \cdot \bm{\varepsilon}.
-	\end{cases} 
+	\end{cases}
 	\qquad \quad \vec{d}_{ba} = \vec{d}_{ab}^*
 \end{equation}
-Here we can see that if we <<turn off>> the interaction ($\vec{d}_{\alpha \beta} = 0$) states $\ket{a}$ and $\ket{b}$ will be unloosened. If we turn the interaction on transitions will take place. 
+Here we can see that if we <<turn off>> the interaction ($\vec{d}_{\alpha \beta} = 0$) states $\ket{a}$ and $\ket{b}$ will be unloosened. If we turn the interaction on transitions will take place.
 
 To get rid off phase factor we introduce
 \begin{equation}
@@ -158,10 +158,10 @@ After that we have
 	\begin{cases}
 		\dot{\widetilde{C}}_a = \frac{i}{\hbar}\vec{d}_{ab} \cdot \bm{\varepsilon} e^{i \omega_0 t} \widetilde{C}_b(t), \\
 		\dot{\widetilde{C}}_b = \frac{i}{\hbar}\vec{d}^*_{ab} \cdot \bm{\varepsilon} e^{-i \omega_0 t} \widetilde{C}_a(t).
-	\end{cases} 
+	\end{cases}
 \end{equation}
 
-Now we need to apply \textit{rotating wave approximation} (RWA). To understand what is it lets look at 
+Now we need to apply \textit{rotating wave approximation} (RWA). To understand what is it lets look at
 \begin{equation}
 	\bm{\varepsilon}(t) e^{i \omega_0 t} = \bm{\varepsilon}_0 \frac{e^{i \omega t} + e^{- i \omega t}}{2} e^{i \omega_0 t}= \frac{1}{2} \bm{\varepsilon}_0 \left( \underbrace{e^{i(\omega_0 + \omega) t}}_{\text{fast osc.}} + e^{i(\omega_0 - \omega) t} \right).
 \end{equation}
@@ -170,7 +170,7 @@ Fast oscillating term will lead to a small contribution, so it may be neglected.
 	\begin{cases}
 		\dot{\widetilde{C}}_a = \frac{i}{2\hbar}\vec{d}_{ab} \cdot \bm{\varepsilon}_0 e^{i \Delta t} \widetilde{C}_b(t), \\
 		\dot{\widetilde{C}}_b = \frac{i}{2\hbar}\vec{d}^*_{ab} \cdot \bm{\varepsilon}_0 e^{-i \Delta t} \widetilde{C}_a(t).
-	\end{cases} 
+	\end{cases}
 \end{equation}
 Agreed notation is the following
 \begin{equation}
@@ -197,5 +197,20 @@ The solution is easy to obtain: $\widetilde{C}_b = \cos \left( \frac{\Omega_R t}
 Here is a short summary:
 \begin{enumerate}
 	\item If $\vec{d} \perp \bm{\varepsilon}$ then $\Omega_R = 0$.
-	\item To increase Rabi frequency one need to increase the amplitude of incident wave $\left| \bm{\varepsilon} \right|$. 
+	\item To increase Rabi frequency one need to increase the amplitude of incident wave $\left| \bm{\varepsilon} \right|$.
 \end{enumerate}
+
+
+\begin{hw}[Deadline: 1st December]
+	\addcontentsline{toc}{subsubsection}{Homework}
+	\begin{enumerate}
+		\item (3 pts) The hydrogen atom wave functions with quantum numbers $(n, l, m_{l})$ of (2,0,0) and (3,1,0) are as follows:
+		$$
+		\psi_{1}(r,\theta,\phi)=\dfrac{1}{4\sqrt{2\pi}a_{0}^{3/2}}\left(2-\dfrac{r}{a_{0}}\right)\exp^{-r/2a_{0}}
+		$$
+		$$
+		\psi_{2}(r,\theta,\phi)=\dfrac{\sqrt{2}}{81\sqrt{\pi}a_{0}^{5/2}}\left(6-\dfrac{r}{a_{0}}\right)r\cos(\theta)\exp^{-r/3a_{0}}
+		$$
+		where $a_{0}$ is the Bohr radius, where $\theta$ is the angle with the $z$-axis (quantization axis). Calculate the intensity of $z$-polarized light field and light power required to observe Rabi oscillations with period of several picoseconds.
+	\end{enumerate}
+\end{hw}

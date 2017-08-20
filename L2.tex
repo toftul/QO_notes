@@ -82,6 +82,29 @@ Here we obtained the Poisson distribution with dispersion $\sigma = \left|\alpha
 	\label{fig:2_1}
 \end{figure}
 
+
+
+
+\begin{hw}[Deadline: 6th of November]
+	\addcontentsline{toc}{subsubsection}{Homework}
+	\begin{enumerate}
+	\item (3 pt) Construct the eigenfunction of the creation operator  $\hat a^{+}|\beta \rangle=\beta|\beta \rangle$.
+	
+	
+	\item (4 pt) Find the eigenfunctions of a coherent state $|\alpha \rangle$ in  the \textbf{position} space (either analytically or numerically).
+	
+	
+	\end{enumerate}
+	
+	
+	{\bf NB:} For solving these problems  you will require the Baker-Campbell-Hausdorff  relations:
+	\begin{itemize}
+	\item $e^{\hat A+\hat B}=e^{\hat A}e^{\hat B}e^{-\frac{1}{2}[\hat A, \hat B]}$,\ \  if\  $[\hat A,[\hat A,\hat B]]=[\hat B,[\hat B,\hat A]]=[\hat B,[\hat A,\hat B]]=0$
+	\item $e^{i\hat A}\hat Be^{-i\hat A} = \hat B + [i\hat A,\hat B] + \dfrac{[i\hat A,[i\hat A,\hat B]]}{2!} + ...$
+	\end{itemize}
+\end{hw}
+
+
 \subsection{Orthogonality}
 
 Are coherent states orthogonal or not? Lets find out:
@@ -113,7 +136,7 @@ Are coherent states orthogonal or not? Lets find out:
 	This is a VERY small value!
 \end{testexample}
 
-\begin{hw}[fullness of coherent states.]
+\begin{hw}[Fullness of coherent states.]
 Let the reader check the fullness of coherent states. In other words needless to show that
 \begin{equation}
 	\mathbb{1} = \frac{1}{\pi} \int \limits_{\mathbb{C}} d^2 \alpha \ket{\alpha} \bra{\alpha}.
@@ -152,6 +175,26 @@ Another property of coherent states. Since
 	\hat{a} \ket{\alpha} = \alpha \ket{\alpha},
 \end{equation}
 then number of photons in the system does not change! {\textcolor{red}{WAT}}
+
+
+\begin{hw}[Deadline: 6th of November]
+	\addcontentsline{toc}{subsubsection}{Homework}
+	
+	\begin{enumerate}
+	\item (3 pt) Prove the overcompleteness of coherent states:
+	$$
+	\mathbf{1}=\int_\mathbb{ C} |\alpha\rangle \langle \alpha| \frac{d^{2}\alpha}{\pi}
+	$$
+	\end{enumerate}
+
+
+	{\bf NB:} For solving these problems  you will require the Baker-Campbell-Hausdorff  relations:
+	\begin{itemize}
+	\item $e^{\hat A+\hat B}=e^{\hat A}e^{\hat B}e^{-\frac{1}{2}[\hat A, \hat B]}$,\ \  if\  $[\hat A,[\hat A,\hat B]]=[\hat B,[\hat B,\hat A]]=[\hat B,[\hat A,\hat B]]=0$
+	\item $e^{i\hat A}\hat Be^{-i\hat A} = \hat B + [i\hat A,\hat B] + \dfrac{[i\hat A,[i\hat A,\hat B]]}{2!} + ...$
+	\end{itemize}
+
+\end{hw}
 
 
 \subsection{Fluctuations}
@@ -247,6 +290,31 @@ and since $\ket{n} = \frac{\left( \hat{a}^{\dagger} \right)^n}{\sqrt{n!}} \ket{0
 
 In many practical cases a natural question appears: \textit{is it possible to overcome the limit of} $\Delta p_{\alpha} \Delta q_{\alpha} = \frac{\hbar}{2}$ \textit{to get more accurate measurements?}
 
+\begin{hw}[Deadline: 6th of November]
+	\addcontentsline{toc}{subsubsection}{Homework}
+
+
+	\begin{enumerate}
+	
+	\item (2 pts) Show that the  operator $D(\alpha)=\exp(\alpha\hat{a^\dagger}-\alpha^*\hat{a})$ { displaces} the creation operator by proving the following relations:
+	%$$
+	%1) D(\alpha)|0\rangle=|\alpha\rangle
+	%$$
+	$$
+	D(\alpha)\hat{a}D(\alpha)^{-1}=\hat{a}-\alpha
+	$$
+	\item (6 pts) Compute the matrix elements $\langle m| \hat{D}(\alpha)|n\rangle$ of the displacement operator in Fock's basis. Express the result in terms of associated Laguerre polynomials.
+	
+	\end{enumerate}
+	
+	
+	{\bf NB:} For solving these problems  you will require the Baker-Campbell-Hausdorff  relations:
+	\begin{itemize}
+	\item $e^{\hat A+\hat B}=e^{\hat A}e^{\hat B}e^{-\frac{1}{2}[\hat A, \hat B]}$,\ \  if\  $[\hat A,[\hat A,\hat B]]=[\hat B,[\hat B,\hat A]]=[\hat B,[\hat A,\hat B]]=0$
+	\item $e^{i\hat A}\hat Be^{-i\hat A} = \hat B + [i\hat A,\hat B] + \dfrac{[i\hat A,[i\hat A,\hat B]]}{2!} + ...$
+	\end{itemize}
+\end{hw}
+
 \subsection{Squeezed states or getting the maximum accuracy!}
 
 Sure, we cannot break the uncertainty principle but we can title the balance of scales for ours good. The main idea is to \textit{squeeze} light state, by geometrical meaning should make an oval from the circle (see fig \ref{fig:sheeeeeeit}).
@@ -310,3 +378,26 @@ Here are some helpful properties of the squeeze operator:
 \end{enumerate}
 
 Lets draw attention to \eqref{eq:SS}. We can notice that squeeze operator $\hat{S}$ consist of squares of ladder operators ($\sim \hat{a}^{\dagger 2}, \hat{a}^{2}$). It means here we have a generation of second harmonic ($2 \hbar \omega$ instead of $\hbar \omega$). In other words,  from a experimenter's point of view, to get the squeezed state one needs a non-linear optical element with $\chi_2 \neq 0$, so it's polarizability $P = \chi_1 E + \chi_2 E^2$. 
+
+
+
+\begin{hw}[Deadline: 6th of November]
+	\addcontentsline{toc}{subsubsection}{Homework}
+
+	\begin{enumerate}
+		\item (4 pt) {\bfseries Classical squeezing.}\\
+		For the problem of a classical harmonic oscillator a general solution can be expressed as $x(t) = c_1 cos\omega_0t + c_2 sin \omega_0t$, where $c_1$ and $c_2$ depend on the  initial conditions. Now consider that you drive this system on a $2\omega_0$ frequency so that $ V(t) = \frac{1}{2}m\omega_0^2x^2\left(1 + \epsilon sin2\omega_0t \right)$ ($\epsilon << 1$). Prove that $c_1(t) = e^{\beta t}$ and $c_2(t) = e^{-\beta t}$ and find $\beta$ using the second Newton's law, the method of  variation of parameters, considering $c_1(t)$ and $c_2(t)$ as slowly varying variables and ignoring fast-oscillating terms.
+		
+		\item (5 pt) {\bfseries Quantum squeezing.}\\
+		Now you know that for squeezing you need to drive your system at $2\omega_0$ frequency. In quantum case it corresponds to the process of parametric down-conversion when you have a strong coherent field (mode $b$) with a frequency $2 \omega_0$ as an input and on the output you have two photons of frequency $\omega_0$ (mode $a$). It can expressed with the following Hamiltonian $\hat H = \hat a^\dagger \hat a^\dagger \hat b + \hat a \hat a \hat b^\dagger$. The corresponding squeezing operator is $\hat S(r) = exp\left[-\frac{r}{2}\left( \hat a^2 - \hat a^{\dagger 2}\right)\right]$, here $r$ describes the strength of squeezing. Compute \\
+		$$1) \hat S(r) \hat x \hat S^\dagger (r)$$
+		$$2) \hat S(r) \hat p \hat S^\dagger (r)$$
+		where $\hat x = \frac{\hat a + \hat a^\dagger}{\sqrt[]{2}}$ and $\hat p = \frac{\hat a - \hat a^\dagger}{\sqrt[]{2}}$.
+	\end{enumerate}
+
+	{\bf NB:} For solving these problems  you will require the Baker-Campbell-Hausdorff  relations:
+	\begin{itemize}
+		\item $e^{\hat A+\hat B}=e^{\hat A}e^{\hat B}e^{-\frac{1}{2}[\hat A, \hat B]}$,\ \  if\  $[\hat A,[\hat A,\hat B]]=[\hat B,[\hat B,\hat A]]=[\hat B,[\hat A,\hat B]]=0$
+		\item $e^{i\hat A}\hat Be^{-i\hat A} = \hat B + [i\hat A,\hat B] + \dfrac{[i\hat A,[i\hat A,\hat B]]}{2!} + ...$
+	\end{itemize}
+\end{hw}

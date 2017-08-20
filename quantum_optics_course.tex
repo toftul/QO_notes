@@ -82,7 +82,7 @@
 	\newtcolorbox[use counter=testexample]{testexamplebox}{%
 		% Example Frame Start
 		empty,% Empty previously set parameters
-		title={\homeworktext: #1},% use \thetcbcounter to access the testexample counter text
+		title={\homeworktext. #1},% use \thetcbcounter to access the testexample counter text
 		% Attaching a box requires an overlay
 		attach boxed title to top left,
 		% Ensures proper line breaking in longer titles
@@ -113,6 +113,7 @@
 \newcommand{\braket}[2]{\langle {#1} \lvert {#2}  \rangle}
 \newcommand{\av}[1]{\left\langle {#1}  \right\rangle}
 \renewcommand{\dag}{^{\dagger}}
+\newcommand{\ap}{a^{\dag}}
 
 \date{ }
 \author{Petrov M. I.}

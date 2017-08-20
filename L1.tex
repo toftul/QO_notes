@@ -136,10 +136,10 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, so
 	\end{equation}
 	Then we get
 	\begin{equation}
-		\mathscr{H} = \frac{L^3}{8 \pi}\textcolor{red}{2} \sum_{\vec{k},s} \tilde{A}_{\vec{k}}^2 \Bigg( \underbrace{\frac{\omega_{\vec{k}}^2}{c^2} \left| u_{\vec{k}s} \right|^2}_{\hookrightarrow E^2} + \underbrace{k^2 \left| u_{\vec{k}s} \right|^2}_{\hookrightarrow H^2}  \Bigg), \qquad k^2 = \frac{\omega_{\vec{k}}^2}{c^2} \text{\ \ (for each mode!)}
+		\mathscr{H} = \frac{L^3}{8 \pi}2 \sum_{\vec{k},s} \tilde{A}_{\vec{k}}^2 \Bigg( \underbrace{\frac{\omega_{\vec{k}}^2}{c^2} \left| u_{\vec{k}s} \right|^2}_{\hookrightarrow E^2} + \underbrace{k^2 \left| u_{\vec{k}s} \right|^2}_{\hookrightarrow H^2}  \Bigg), \qquad k^2 = \frac{\omega_{\vec{k}}^2}{c^2} \text{\ \ (for each mode!)}
 	\end{equation}
 	\begin{equation}
-		\mathscr{H} = \frac{L^3}{\textcolor{red}{2} \pi} \sum_{\vec{k},s} \tilde{A}_{\vec{k}}^2 k^2 \left| u_{\vec{k}s} \right|^2.
+		\mathscr{H} = \frac{L^3}{2 \pi} \sum_{\vec{k},s} \tilde{A}_{\vec{k}}^2 k^2 \left| u_{\vec{k}s} \right|^2.
 	\end{equation}
 	Segregation if real and imaginary part of mode can be done by introducing new variables
 	\begin{eqnarray}
@@ -152,9 +152,9 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, so
 	\end{equation}
 	The Hamiltonian function will be as follows
 	\begin{equation}
-		\mathscr{H} = \frac{L^3}{\textcolor{red}{4} \pi c} \sum_{\vec{k},s} \frac{\tilde{A}_{\vec{k}}^2}{2} \left( p^2_{\vec{k}s} + \omega^2_{\vec{k}} q_{\vec{k}s}^2 \right).
+		\mathscr{H} = \frac{L^3}{4 \pi c} \sum_{\vec{k},s} \frac{\tilde{A}_{\vec{k}}^2}{2} \left( p^2_{\vec{k}s} + \omega^2_{\vec{k}} q_{\vec{k}s}^2 \right).
 	\end{equation}
-	Let us boldly put $\tilde{A}_{\vec{k}} = \sqrt{\textcolor{red}{4} \pi c^2/L^3}$, then finally
+	Let us boldly put $\tilde{A}_{\vec{k}} = \sqrt{4 \pi c^2/L^3}$, then finally
 	\begin{equation}
 		\mathscr{H} = \sum_{\vec{k},s}  \left( \frac{p^2_{\vec{k}s}}{2}+ \frac{\omega^2_{\vec{k}} q_{\vec{k}s}^2}{2} \right).
 	\end{equation}
@@ -275,6 +275,20 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, so
 	\begin{equation}
 		\ket{n} = \ket{0, \dots, 0, \underbrace{1}_{\text{n-th place}}, 0, \dots , 0}.
 	\end{equation}
+
+	\begin{hw}[Deadline: 13th of October]
+		\addcontentsline{toc}{subsubsection}{Homework}
+		
+		\begin{enumerate}
+		\item (2 pt) Calculate the average: $\langle n|(a+\ap)^{2}|n\rangle$
+		\item (2 pt) Calculate the average: $\langle n|(a+\ap)^{3}|n-1\rangle$
+		%\item (2 pt) What are the nonzero matrix elements of the operator $\ap\ap a$ in Fock's represntation~?
+		%\item Consider two interacting
+		
+		\item (4 pts) Show the operator identities $\hat a^{+}|n\rangle=\sqrt{n+1}|n+1\rangle$ and $\hat a|n\rangle=\sqrt{n}|n-1\rangle$ in the {\em position} space.
+		
+		\end{enumerate}
+	\end{hw}
 	
 	\subsection{Fields' fluctuation}
 	
@@ -306,8 +320,30 @@ Let us make a remark: $\vec{A}_{\vec{k}} \in \mathbb{R}$, so
 		\sum_{\vec{k},s} \frac{2 \pi \hbar \omega_{\vec{k}}}{L^3} = \\ = \sum_{\vec{k},s} \frac{\hbar \omega_{\vec{k}}}{(2 \pi)^2} \Delta k_x \Delta k_y \Delta k_z \Bigg|_{L \to \infty} = \frac{2}{(2 \pi)^3} \int d^3 p \hbar \omega_{\vec{k}} = \frac{2 \cdot 4 \pi}{(2 \pi)^2} \frac{\hbar}{c^3} \int \limits_0^{\infty} \omega^3 d  \omega \to \infty.
 	\end{multline}
 So, fluctuations are infinite for multimode vacuum state.
+
+	\begin{hw}[Deadline: 13th of October]
+		\addcontentsline{toc}{subsubsection}{Homework}
+		
+		\begin{enumerate}
+		
+		\item (4 pts)Show the following commutation relation (see Scully\&Zubairy):
+		$$
+		[\hat{E}_{j}({\bf r},t), \hat{H}_{j}({\bf r'},t)]=0, \qquad i=x,y,z
+		$$
+		$$
+		[\hat{E}_{j}({\bf r},t), \hat{H}_{k}({\bf r'},t)]=-i\hbar c^{2}\dfrac{\partial}{\partial l}\delta^{(3)}({\bf r}-{\bf r'},), \qquad j,k,l=x,y,z
+		$$
+		
+		
+		\item (4 pts) {\bf Quantum virial theorem.} Consider quantum oscillator in Fock state $|n\rangle$.
+		
+		a) Check the virial theorem, computing the average potential $\langle \hat \Pi  \rangle$ and kinetic $\langle \hat K  \rangle$ energy
+		
+		b) Compute the energy fluctuations  $\Delta \Pi$ and $\Delta K$ in this state
+		\end{enumerate}
+	\end{hw}
 	
-	\subsection{Casimir effect (NOT FINISHED)} 
+	\subsection{Casimir effect (NOT STARTED)}
 \begin{figure}
 		\centering
 		\includegraphics[width=0.4\linewidth]{fig/L1/tWo-qqZjraA}
